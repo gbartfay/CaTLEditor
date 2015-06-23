@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="hu.bme.mit.catleditor.design.Activator"
+               id="hu.bme.mit.catleditor.design"
+	       name="catleditor">
+    </component>
+  </extension>
+</plugin>
