@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="CaTLMaker" nsURI="hu.bme.mit.catlmaker" nsPrefix="hu.bme.mit.catlmaker">
+  <eClassifiers xsi:type="ecore:EClass" name="Expression" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sysProp" lowerBound="1"
+        eType="#//SystemProperties"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//Contexts"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractAtomicFormulas" abstract="true"
+      eSuperTypes="#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="#//TemperatureEnum"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Propositions" eSuperTypes="#//AbstractAtomicFormulas">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="prop" lowerBound="1" eType="#//SystemProperty"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimingConst" eSuperTypes="#//AbstractAtomicFormulas">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dynamicClock" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar"
+        changeable="false" defaultValueLiteral="t"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="StaticTimingVariable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContextConst" eSuperTypes="#//AbstractAtomicFormulas">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="#//ContextOperatorEnum"
+        defaultValueLiteral="NOTHING"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cont" lowerBound="1" eType="#//Context"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedNode" eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedConnection" eType="#//Connection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PropertyConst" eSuperTypes="#//AbstractAtomicFormulas">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedProp" lowerBound="1"
+        eType="#//Property"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TemperatureEnum">
+    <eLiterals name="HOT"/>
+    <eLiterals name="COLD"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NextForm" eSuperTypes="#//TempForm">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Expression"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UntilForm" eSuperTypes="#//TempForm">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
+        eType="#//Expression"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
+        eType="#//Expression"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OrForm" eSuperTypes="#//BooleForm">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
+        eType="#//Expression"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
+        eType="#//Expression"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NegationForm" eSuperTypes="#//BooleForm">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Expression"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TempForm" eSuperTypes="#//Expression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BooleForm" eSuperTypes="#//Expression"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComparisonEnum">
+    <eLiterals name="LESS"/>
+    <eLiterals name="EQUAL"/>
+    <eLiterals name="MORE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemProperties">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="props" upperBound="-1"
+        eType="#//SystemProperty" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Property">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ContextOperatorEnum">
+    <eLiterals name="NODE_EXC"/>
+    <eLiterals name="NODE_ADD"/>
+    <eLiterals name="CONNECTION_EXC"/>
+    <eLiterals name="CONNECTION_ADD"/>
+    <eLiterals name="NOTHING"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Context">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
+        eType="#//Node" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//Connection" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cntxName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+        eType="#//Property" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Connection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leftNode" lowerBound="1"
+        eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightNode" lowerBound="1"
+        eType="#//Node"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StaticContextVar">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contexts">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cntxs" upperBound="-1"
+        eType="#//Context" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="staticVars" upperBound="-1"
+        eType="#//StaticContextVar" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>
