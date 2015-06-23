@@ -5,7 +5,8 @@
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>CaTLEditor.ecore</foreignModel>
-  <genPackages prefix="CaTLEditor" disposableProviderFactory="true" ecorePackage="CaTLEditor.ecore#/">
+  <genPackages prefix="CaTLEditor" basePackage="hu.bme.mit" disposableProviderFactory="true"
+      ecorePackage="CaTLEditor.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="CaTLEditor.ecore#//TemperatureEnum">
       <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//TemperatureEnum/HOT"/>
       <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//TemperatureEnum/COLD"/>
@@ -105,7 +106,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//CaTLExpression">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/pattern"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/pattern"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/context"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/sysProp"/>
     </genClasses>
