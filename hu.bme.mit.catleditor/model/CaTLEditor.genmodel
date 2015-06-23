@@ -46,18 +46,18 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//PropertyConst/usedProp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//NextForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NextForm/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NextForm/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//UntilForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//UntilForm/rightOp"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//UntilForm/leftOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//UntilForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//UntilForm/leftOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//OrForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/leftOp"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/leftOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//NegationForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NegationForm/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NegationForm/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//TempForm"/>
     <genClasses ecoreClass="CaTLEditor.ecore#//BooleForm"/>
@@ -91,23 +91,23 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Contexts/staticVars"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//Globally">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Globally/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Globally/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//Future">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Future/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Future/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//AndForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/leftOp"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/leftOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//ImpForm">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/leftOp"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/leftOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//CaTLExpression">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/pattern"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/context"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/sysProp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/context"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/sysProp"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

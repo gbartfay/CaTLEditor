@@ -33,22 +33,24 @@
     <eLiterals name="COLD"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NextForm" eSuperTypes="#//TempForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UntilForm" eSuperTypes="#//TempForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OrForm" eSuperTypes="#//BooleForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NegationForm" eSuperTypes="#//BooleForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TempForm" eSuperTypes="#//Pattern"/>
   <eClassifiers xsi:type="ecore:EClass" name="BooleForm" eSuperTypes="#//Pattern"/>
@@ -102,28 +104,31 @@
         eType="#//StaticContextVar" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Globally" eSuperTypes="#//TempForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Future" eSuperTypes="#//TempForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AndForm" eSuperTypes="#//BooleForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImpForm" eSuperTypes="#//BooleForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern"/>
+        eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaTLExpression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="pattern" lowerBound="1"
         eType="#//Pattern"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//Contexts"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//Contexts"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sysProp" lowerBound="1"
-        eType="#//SystemProperties"/>
+        eType="#//SystemProperties" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
