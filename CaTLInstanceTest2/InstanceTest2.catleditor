@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor">
   <pattern xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
-    <op xsi:type="hu.bme.mit.catleditor:OrForm">
-      <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name=""/>
-      <rightOp xsi:type="hu.bme.mit.catleditor:Propositions"/>
+    <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
+      <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop1" temperature="COLD"/>
+      <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2"/>
     </op>
   </pattern>
 </hu.bme.mit.catleditor:CaTLExpression>
