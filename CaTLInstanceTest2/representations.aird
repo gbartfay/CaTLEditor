@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_vv3pYBpSEeWJTd5rpB-tEg" selectedViews="_IGWPkBpUEeWJTd5rpB-tEg" version="8.1.1">
+  <models xmi:type="description:Group" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#/"/>
+  <models xmi:type="description:Environment" href="environment:/viewpoint#/"/>
+  <models xmi:type="hu.bme.mit.catleditor:CaTLExpression" href="InstanceTest2.catleditor#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_IGWPkBpUEeWJTd5rpB-tEg" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_azW2YBpWEeWJTd5rpB-tEg" name="CaTL Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_azW2aBpWEeWJTd5rpB-tEg" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_azW2aRpWEeWJTd5rpB-tEg" type="Sirius" element="_azW2YBpWEeWJTd5rpB-tEg" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_azW2axpWEeWJTd5rpB-tEg" type="2002" element="_azW2YRpWEeWJTd5rpB-tEg">
+            <children xmi:type="notation:Node" xmi:id="_azXdcBpWEeWJTd5rpB-tEg" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_azXdcRpWEeWJTd5rpB-tEg" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_azXdchpWEeWJTd5rpB-tEg"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_azXdcxpWEeWJTd5rpB-tEg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_azW2bBpWEeWJTd5rpB-tEg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_azW2bRpWEeWJTd5rpB-tEg"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_azW2ahpWEeWJTd5rpB-tEg"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_azW2YRpWEeWJTd5rpB-tEg">
+        <target xmi:type="hu.bme.mit.catleditor:NextForm" href="InstanceTest2.catleditor#//@pattern"/>
+        <semanticElements xmi:type="hu.bme.mit.catleditor:NextForm" href="InstanceTest2.catleditor#//@pattern"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_azW2YhpWEeWJTd5rpB-tEg">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_azW2YxpWEeWJTd5rpB-tEg"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']/@containerMappings[name='']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_azW2ZBpWEeWJTd5rpB-tEg"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_azW2ZRpWEeWJTd5rpB-tEg" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_azW2ZhpWEeWJTd5rpB-tEg" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']/@containerMappings[name='']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_azW2ZxpWEeWJTd5rpB-tEg"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']"/>
+      <target xmi:type="hu.bme.mit.catleditor:CaTLExpression" href="InstanceTest2.catleditor#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
