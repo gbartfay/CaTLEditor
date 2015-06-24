@@ -2,7 +2,10 @@
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor">
   <pattern xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
     <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
-      <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop1" temperature="COLD"/>
+      <leftOp xsi:type="hu.bme.mit.catleditor:AndForm">
+        <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="prop1"/>
+        <rightOp xsi:type="hu.bme.mit.catleditor:TimingConst"/>
+      </leftOp>
       <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2"/>
     </op>
   </pattern>

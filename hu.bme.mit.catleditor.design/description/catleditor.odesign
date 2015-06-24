@@ -6,7 +6,7 @@
       <additionalLayers label="CaTL" activeByDefault="true">
         <containerMappings name="next" label="Next" domainClass="NextForm">
           <subContainerMappings name="or" label="Or" semanticCandidatesExpression="feature:eAllContents" domainClass="OrForm">
-            <borderedNodeMappings name="propositions" label="Propositions" semanticCandidatesExpression="feature:eAllContents" domainClass="Propositions">
+            <borderedNodeMappings name="propositions" label="Propositions" semanticCandidatesExpression="[rightOp/]" domainClass="Propositions">
               <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -37,6 +37,12 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="and" label="And" semanticCandidatesExpression="[pattern/]" domainClass="AndForm">
+          <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/and.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </containerMappings>
         <toolSections label="Basic Elements"/>
