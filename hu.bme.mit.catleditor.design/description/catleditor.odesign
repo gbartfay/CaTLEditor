@@ -39,8 +39,11 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
+        <toolSections label="Basic Elements"/>
       </additionalLayers>
-      <additionalLayers label="Contexts" activeByDefault="true"/>
+      <additionalLayers label="Contexts" activeByDefault="true">
+        <toolSections label="Context elements"/>
+      </additionalLayers>
     </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>
