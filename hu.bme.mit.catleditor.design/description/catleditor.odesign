@@ -3,7 +3,7 @@
   <ownedViewpoints name="catleditor" modelFileExtension="catleditor">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CaTLDiagram" label="CaTL Diagram" initialisation="true" domainClass="CaTLExpression">
       <defaultLayer name="Default"/>
-      <additionalLayers name="catllayer" label="CaTL" activeByDefault="true">
+      <additionalLayers name="catllayer" label="CaTL Layer" activeByDefault="true">
         <containerMappings name="next" label="Next" domainClass="NextForm">
           <subContainerMappings name="or" label="Or" semanticCandidatesExpression="feature:eAllContents" domainClass="OrForm">
             <borderedNodeMappings name="propositions" label="Propositions" semanticCandidatesExpression="[rightOp/]" domainClass="Propositions">
@@ -89,7 +89,7 @@
           </ownedTools>
         </toolSections>
       </additionalLayers>
-      <additionalLayers name="cntxlayer" label="Contexts" activeByDefault="true">
+      <additionalLayers name="cntxlayer" label="Contexts Layer" activeByDefault="true">
         <containerMappings name="sysprops" label="SystemProperties" domainClass="SystemProperties">
           <subNodeMappings name="sp" label="SystemProp" semanticCandidatesExpression="feature:eAllContents" domainClass="SystemProperty">
             <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:label" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
@@ -106,6 +106,22 @@
           </style>
         </containerMappings>
         <containerMappings name="contexts" label="Contexts" domainClass="Contexts">
+          <subContainerMappings name="context" label="Context" semanticCandidatesExpression="[cntxs/]" domainClass="Context">
+            <subContainerMappings name="node" label="Node" semanticCandidatesExpression="feature:eAllContents" domainClass="Node">
+              <style xsi:type="style:FlatContainerStyleDescription">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="Contexts">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -133,6 +149,20 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Contexts" referenceName="context"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createcontext" label="Context" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Context" referenceName="cntxs"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnode" label="Node" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Node" referenceName="nodes"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

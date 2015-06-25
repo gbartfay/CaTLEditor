@@ -9,7 +9,11 @@
       <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2"/>
     </op>
   </pattern>
-  <context/>
+  <context>
+    <cntxs cntxName="e1">
+      <nodes name="node1"/>
+    </cntxs>
+  </context>
   <sysProp>
     <props label="connected"/>
     <props label="stopped"/>
