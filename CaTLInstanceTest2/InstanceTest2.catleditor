@@ -9,4 +9,8 @@
       <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2"/>
     </op>
   </pattern>
+  <context/>
+  <sysProp>
+    <props label="connected"/>
+  </sysProp>
 </hu.bme.mit.catleditor:CaTLExpression>
