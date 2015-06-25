@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="catleditor" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="catleditor" version="8.1.0">
   <ownedViewpoints name="catleditor" modelFileExtension="catleditor">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CaTLDiagram" label="CaTL Diagram" initialisation="true" domainClass="CaTLExpression">
       <defaultLayer name="Default"/>
@@ -28,12 +28,40 @@
               </conditionnalStyles>
             </borderedNodeMappings>
             <subContainerMappings name="and2" label="And" semanticCandidatesExpression="[leftOp/]" domainClass="AndForm">
-              <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/and2.png">
+              <subNodeMappings name="propositions2" label="Propositions" semanticCandidatesExpression="[leftOp/]" domainClass="Propositions">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+                <conditionnalStyles predicateExpression="[self.temperature.toString()  = 'HOT'/]">
+                  <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="[self.temperature.toString()  = 'COLD'/]">
+                  <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  </style>
+                </conditionnalStyles>
+              </subNodeMappings>
+              <subNodeMappings name="timing" label="TimingConst" semanticCandidatesExpression="[rightOp/]" domainClass="TimingConst">
+                <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="feature:StaticTimingVariable" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="8" verticalDiameterComputationExpression="8">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/hu.bme.mit.catleditor.design/images/and2.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/or2.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/hu.bme.mit.catleditor.design/images/or2.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -51,7 +79,15 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </containerMappings>
-        <toolSections label="Basic Elements"/>
+        <toolSections label="Basic Elements">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createtiming" label="Timing" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='timing']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="TimingConst" referenceName="rightOp"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </additionalLayers>
       <additionalLayers label="Contexts" activeByDefault="true">
         <toolSections label="Context elements"/>
