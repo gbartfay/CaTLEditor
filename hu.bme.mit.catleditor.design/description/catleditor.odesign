@@ -113,6 +113,13 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="SystemProperty" referenceName="props"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createsysprops" label="System Properties" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='sysprops']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="SystemProperties" referenceName="sysProp"/>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
       </additionalLayers>
     </ownedRepresentations>
