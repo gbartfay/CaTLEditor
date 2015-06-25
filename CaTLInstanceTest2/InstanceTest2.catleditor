@@ -12,5 +12,6 @@
   <context/>
   <sysProp>
     <props label="connected"/>
+    <props label="stopped"/>
   </sysProp>
 </hu.bme.mit.catleditor:CaTLExpression>

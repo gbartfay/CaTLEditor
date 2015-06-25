@@ -3,7 +3,7 @@
   <ownedViewpoints name="catleditor" modelFileExtension="catleditor">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CaTLDiagram" label="CaTL Diagram" initialisation="true" domainClass="CaTLExpression">
       <defaultLayer name="Default"/>
-      <additionalLayers label="CaTL" activeByDefault="true">
+      <additionalLayers name="catllayer" label="CaTL" activeByDefault="true">
         <containerMappings name="next" label="Next" domainClass="NextForm">
           <subContainerMappings name="or" label="Or" semanticCandidatesExpression="feature:eAllContents" domainClass="OrForm">
             <borderedNodeMappings name="propositions" label="Propositions" semanticCandidatesExpression="[rightOp/]" domainClass="Propositions">
@@ -79,8 +79,8 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </containerMappings>
-        <toolSections label="Basic Elements">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createtiming" label="Timing" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='timing']">
+        <toolSections name="basic" label="Basic Elements">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createtiming" label="Timing" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='timing']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -89,13 +89,13 @@
           </ownedTools>
         </toolSections>
       </additionalLayers>
-      <additionalLayers label="Contexts" activeByDefault="true">
+      <additionalLayers name="cntxlayer" label="Contexts" activeByDefault="true">
         <containerMappings name="sysprops" label="SystemProperties" domainClass="SystemProperties">
-          <subNodeMappings name="sysprop" label="SystemProperty" semanticCandidatesExpression="[props/]" domainClass="SystemProperty">
-            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:label" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="sp" label="SystemProp" semanticCandidatesExpression="feature:eAllContents" domainClass="SystemProperty">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:label" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subNodeMappings>
           <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="System Properties" backgroundStyle="Liquid">
@@ -105,7 +105,15 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <toolSections label="Context elements"/>
+        <toolSections name="cntxelements" label="Context elements">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createsysprop" label="System Property" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='sysprops']/@subNodeMappings[name='sp']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="SystemProperty" referenceName="props"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </additionalLayers>
     </ownedRepresentations>
   </ownedViewpoints>
