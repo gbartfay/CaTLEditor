@@ -27,7 +27,13 @@
                 </style>
               </conditionnalStyles>
             </borderedNodeMappings>
-            <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/or.png">
+            <subContainerMappings name="and2" label="And" semanticCandidatesExpression="[leftOp/]" domainClass="AndForm">
+              <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/and2.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/or2.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -40,7 +46,7 @@
           </style>
         </containerMappings>
         <containerMappings name="and" label="And" semanticCandidatesExpression="[pattern/]" domainClass="AndForm">
-          <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/and.png">
+          <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/and2.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
