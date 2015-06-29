@@ -116,6 +116,13 @@
         <containerMappings name="contexts" label="Contexts" domainClass="Contexts">
           <subContainerMappings name="context" label="Context" semanticCandidatesExpression="[cntxs/]" domainClass="Context">
             <subContainerMappings name="node" label="Node" semanticCandidatesExpression="feature:eAllContents" domainClass="Node">
+              <subNodeMappings name="nodeprop" label="NodeProperty" semanticCandidatesExpression="feature:eAllContents" domainClass="Property">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </subNodeMappings>
               <style xsi:type="style:FlatContainerStyleDescription">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -170,7 +177,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Node" referenceName="nodes"/>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Node" referenceName="nodes" variableName="instanceNode"/>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool:EdgeCreationDescription" name="createconnection" label="Connection" edgeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@edgeMappings[name='connection']">
@@ -185,6 +192,13 @@
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="rightNode" valueExpression="[target/]"/>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createnoprop" label="NodeProperty" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']/@subNodeMappings[name='nodeprop']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Property" referenceName="properties" variableName="instanceProp"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

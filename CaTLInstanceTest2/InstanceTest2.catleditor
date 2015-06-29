@@ -11,9 +11,15 @@
   </pattern>
   <context>
     <cntxs cntxName="e2">
-      <nodes name="node1"/>
+      <nodes name="node1">
+        <properties name="testProp"/>
+      </nodes>
       <nodes name="node2"/>
       <nodes name="Node3"/>
+      <nodes name="node 4"/>
+      <nodes name="Node 5">
+        <properties name="node 5 property"/>
+      </nodes>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2"/>
