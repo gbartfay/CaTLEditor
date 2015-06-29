@@ -90,6 +90,14 @@
         </toolSections>
       </additionalLayers>
       <additionalLayers name="cntxlayer" label="Contexts Layer" activeByDefault="true">
+        <edgeMappings name="connection" label="Connection" sourceMapping="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']" targetMapping="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']" targetFinderExpression="feature:rightNode" sourceFinderExpression="feature:leftNode" domainClass="Connection" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <containerMappings name="sysprops" label="SystemProperties" domainClass="SystemProperties">
           <subNodeMappings name="sp" label="SystemProp" semanticCandidatesExpression="feature:eAllContents" domainClass="SystemProperty">
             <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:label" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
@@ -115,7 +123,7 @@
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="">
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="context">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -163,6 +171,20 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Node" referenceName="nodes"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="createconnection" label="Connection" edgeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@edgeMappings[name='connection']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:eContainer">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Connection" referenceName="connections">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="leftNode" valueExpression="[source/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="rightNode" valueExpression="[target/]"/>
+                </subModelOperations>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>

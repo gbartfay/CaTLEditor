@@ -10,9 +10,13 @@
     </op>
   </pattern>
   <context>
-    <cntxs cntxName="e1">
+    <cntxs cntxName="e2">
       <nodes name="node1"/>
       <nodes name="node2"/>
+      <nodes name="Node3"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2"/>
     </cntxs>
   </context>
   <sysProp>
