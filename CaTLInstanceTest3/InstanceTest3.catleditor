@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor">
+  <pattern xsi:type="hu.bme.mit.catleditor:NegationForm">
+    <op xsi:type="hu.bme.mit.catleditor:Propositions"/>
+  </pattern>
+</hu.bme.mit.catleditor:CaTLExpression>
