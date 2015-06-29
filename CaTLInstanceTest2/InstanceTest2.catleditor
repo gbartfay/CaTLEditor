@@ -12,6 +12,7 @@
   <context>
     <cntxs cntxName="e1">
       <nodes name="node1"/>
+      <nodes name="node2"/>
     </cntxs>
   </context>
   <sysProp>
