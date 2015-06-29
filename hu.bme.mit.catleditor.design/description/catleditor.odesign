@@ -79,6 +79,12 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </containerMappings>
+        <containerMappings name="negation" label="Negation" domainClass="NegationForm">
+          <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/negation2.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
         <toolSections name="basic" label="Basic Elements">
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createtiming" label="Timing" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='timing']">
             <variable name="container"/>
