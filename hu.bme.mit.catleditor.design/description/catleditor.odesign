@@ -4,7 +4,7 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CaTLDiagram" label="CaTL Diagram" initialisation="true" domainClass="CaTLExpression">
       <defaultLayer name="Default"/>
       <additionalLayers name="catllayer" label="CaTL Layer" activeByDefault="true">
-        <containerMappings name="next" label="Next" domainClass="NextForm">
+        <containerMappings name="next" label="Next" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="NextForm">
           <subContainerMappings name="or" label="Or" semanticCandidatesExpression="feature:eAllContents" domainClass="OrForm">
             <borderedNodeMappings name="propositions" label="Propositions" semanticCandidatesExpression="[rightOp/]" domainClass="Propositions">
               <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
@@ -80,6 +80,27 @@
           </style>
         </containerMappings>
         <containerMappings name="negation" label="Negation" domainClass="NegationForm">
+          <subNodeMappings name="propositions2" label="Propositions" semanticCandidatesExpression="[op/]" domainClass="Propositions">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[self.temperature.toString()  = 'HOT'/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.temperature.toString()  = 'COLD'/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
           <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/negation2.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -91,6 +112,15 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="TimingConst" referenceName="rightOp"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="click" mappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="generate" id="hu.bme.mit.catleditor.design.GenerateCaTL">
+                <parameters name="container" value="[self.eContainer()/]"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>

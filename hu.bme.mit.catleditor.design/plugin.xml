@@ -7,4 +7,11 @@
 	       name="catleditor">
     </component>
   </extension>
+  <extension
+        point="org.eclipse.sirius.externalJavaAction">
+     <javaActions
+           actionClass="hu.bme.mit.catleditor.design.GenerateCaTL"
+           id="hu.bme.mit.catleditor.design.GenerateCaTL">
+     </javaActions>
+  </extension>
 </plugin>

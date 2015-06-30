@@ -3,7 +3,7 @@
   <pattern xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
     <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
       <leftOp xsi:type="hu.bme.mit.catleditor:AndForm">
-        <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="prop1"/>
+        <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="prop1" prop="//@sysProp/@props.2"/>
         <rightOp xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
       </leftOp>
       <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2"/>
@@ -23,7 +23,9 @@
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.2" rightNode="//@context/@cntxs.0/@nodes.4"/>
     </cntxs>
+    <cntxs/>
   </context>
   <sysProp>
     <props label="connected"/>
