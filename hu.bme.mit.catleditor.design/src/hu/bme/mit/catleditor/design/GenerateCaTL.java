@@ -25,7 +25,7 @@ public class GenerateCaTL implements IExternalJavaAction {
             generateExpression(root);
             
         }
-		System.out.println("Mukodik az external java action!");
+		//System.out.println("Mukodik az external java action!");
 		
 	}
 
@@ -40,19 +40,72 @@ public class GenerateCaTL implements IExternalJavaAction {
 		//TODO rekurzio
 		Pattern pattern = root.getPattern();
 		handleInnerElements(out, pattern);
-		
+
 		root.setOutput(out.toString());
 	}
 	
 	private void handleInnerElements(StringBuilder out, Pattern pattern) {
 		if (pattern instanceof OrForm) {
 			OrForm or = (OrForm) pattern;
-			out = out.append("or");
+			out = out.append("(");
+			handleInnerElements(out, (or.getLeftOp()));
+			out = out.append(" ");
+			out = out.append(Character.toChars(709));
+			out = out.append(" ");
+			handleInnerElements(out, (or.getRightOp()));
+			out = out.append(")");
 		}
+		
+		if (pattern instanceof AndForm) {
+			AndForm and = (AndForm) pattern;
+			out = out.append("(");
+			handleInnerElements(out, (and.getLeftOp()));
+			out = out.append(" ");
+			out = out.append(Character.toChars(708));
+			out = out.append(" ");
+			handleInnerElements(out, (and.getRightOp()));
+			out = out.append(")");
+		}
+		
+		if (pattern instanceof ImpForm) {
+			ImpForm imp = (ImpForm) pattern;
+			out = out.append("(");
+			handleInnerElements(out, (imp.getLeftOp()));
+			out = out.append(" ");
+			out = out.append(Character.toChars(8594));
+			out = out.append(" ");
+			handleInnerElements(out, (imp.getRightOp()));
+			out = out.append(")");
+		}
+		
+		
+		if (pattern instanceof NegationForm) {
+			NegationForm neg = (NegationForm) pattern;
+			out.append(Character.toChars(172));
+			handleInnerElements(out, (neg.getOp()));
+		}
+		
 		if (pattern instanceof NextForm) {
 			NextForm next = (NextForm) pattern;
-			out = out.append("X(");
-			handleInnerElements(out, ((NextForm) pattern).getOp());
+			out = out.append("X");
+			handleInnerElements(out, (next.getOp()));
+		}
+		if (pattern instanceof Globally) {
+			Globally globally = (Globally) pattern;
+			out = out.append("G");
+			handleInnerElements(out, (globally.getOp()));
+		}
+		if (pattern instanceof Future) {
+			Future future = (Future) pattern;
+			out = out.append("F");
+			handleInnerElements(out, (future.getOp()));
+		}
+		if (pattern instanceof UntilForm) {
+			UntilForm until = (UntilForm) pattern;
+			out = out.append("(");
+			handleInnerElements(out, (until.getLeftOp()));
+			out = out.append(" U ");
+			handleInnerElements(out, (until.getRightOp()));
 			out = out.append(")");
 		}
 		
@@ -92,6 +145,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 		}
 		if (aaf instanceof ContextConst) {
 			ContextConst cntx = (ContextConst) aaf;
+			out = out.append(Character.toChars(8669));
 			//TODO
 			out = out.append("TODO: contextconst is not implemented yet!");
 		}
