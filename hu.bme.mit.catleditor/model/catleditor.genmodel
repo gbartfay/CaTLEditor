@@ -45,6 +45,8 @@
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//PropertyConst">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//PropertyConst/usedProp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//PropertyConst/relation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//PropertyConst/value"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//NextForm">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NextForm/op"/>
