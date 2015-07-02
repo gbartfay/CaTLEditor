@@ -6,13 +6,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AbstractAtomicFormulas" abstract="true"
       eSuperTypes="#//Pattern">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="#//TemperatureEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="#//TemperatureEnum"
+        defaultValueLiteral="HOT"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Propositions" eSuperTypes="#//AbstractAtomicFormulas">
     <eStructuralFeatures xsi:type="ecore:EReference" name="prop" lowerBound="1" eType="#//SystemProperty"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TimingConst" eSuperTypes="#//AbstractAtomicFormulas">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"
+        defaultValueLiteral="LESS"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dynamicClock" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar"
         changeable="false" defaultValueLiteral="t"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="StaticTimingVariable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -27,7 +29,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PropertyConst" eSuperTypes="#//AbstractAtomicFormulas">
     <eStructuralFeatures xsi:type="ecore:EReference" name="usedProp" lowerBound="1"
         eType="#//Property"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"
+        defaultValueLiteral="LESS"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TemperatureEnum">
