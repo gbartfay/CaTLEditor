@@ -43,9 +43,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UntilForm" eSuperTypes="#//TempForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
+        eType="#//rightOp" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
+        eType="#//LeftOp" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OrForm" eSuperTypes="#//BooleForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
@@ -124,9 +124,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImpForm" eSuperTypes="#//BooleForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
+        eType="#//LeftOp" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
+        eType="#//rightOp" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaTLExpression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="pattern" lowerBound="1"
@@ -136,5 +136,15 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="sysProp" lowerBound="1"
         eType="#//SystemProperties" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="output" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LeftOp">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="rightOp">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
