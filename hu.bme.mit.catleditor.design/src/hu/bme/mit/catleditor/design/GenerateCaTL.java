@@ -70,11 +70,11 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (pattern instanceof ImpForm) {
 			ImpForm imp = (ImpForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (imp.getLeftOp()));
+			handleInnerElements(out, (imp.getLeftOp().getOp()));
 			out = out.append(" ");
 			out = out.append(Character.toChars(8594));
 			out = out.append(" ");
-			handleInnerElements(out, (imp.getRightOp()));
+			handleInnerElements(out, (imp.getRightOp().getOp()));
 			out = out.append(")");
 		}
 		
@@ -103,9 +103,9 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (pattern instanceof UntilForm) {
 			UntilForm until = (UntilForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (until.getLeftOp()));
+			handleInnerElements(out, (until.getLeftOp().getOp()));
 			out = out.append(" U ");
-			handleInnerElements(out, (until.getRightOp()));
+			handleInnerElements(out, (until.getRightOp().getOp()));
 			out = out.append(")");
 		}
 		
