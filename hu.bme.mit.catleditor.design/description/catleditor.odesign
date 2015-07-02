@@ -73,7 +73,7 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <containerMappings name="and" label="And" semanticCandidatesExpression="[pattern/]" domainClass="AndForm">
+        <containerMappings name="and" label="And" semanticCandidatesExpression="[pattern/]" domainClass="AndForm" childrenPresentation="HorizontalStack">
           <style xsi:type="style:WorkspaceImageDescription" arcWidth="1" arcHeight="1" workspacePath="/hu.bme.mit.catleditor.design/images/and2.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -106,7 +106,7 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </containerMappings>
-        <containerMappings name="until" label="Until" semanticCandidatesExpression="[pattern/]" domainClass="UntilForm">
+        <containerMappings name="until" label="Until" semanticCandidatesExpression="[pattern/]" domainClass="UntilForm" childrenPresentation="HorizontalStack">
           <subContainerMappings name="beforeuntil" semanticCandidatesExpression="[leftOp/]" domainClass="LeftOp" reusedNodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='propositions2']" reusedContainerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']">
             <style xsi:type="style:FlatContainerStyleDescription" labelExpression="left side of until">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -129,6 +129,24 @@
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
+        </containerMappings>
+        <containerMappings name="implication" label="Implication" semanticCandidatesExpression="[pattern/]" domainClass="ImpForm" childrenPresentation="HorizontalStack">
+          <subContainerMappings name="beforeimp" semanticCandidatesExpression="[leftOp/]" domainClass="LeftOp">
+            <style xsi:type="style:FlatContainerStyleDescription">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="afterimp" semanticCandidatesExpression="[rightOp/]" domainClass="RightOp">
+            <style xsi:type="style:FlatContainerStyleDescription">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
         </containerMappings>
         <toolSections name="basic" label="Basic Elements">
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createtiming" label="Timing" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']/@subContainerMappings[name='or']/@subContainerMappings[name='and2']/@subNodeMappings[name='timing']">
