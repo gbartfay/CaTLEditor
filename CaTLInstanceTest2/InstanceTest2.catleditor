@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X(or)">
+<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X((started ˄ t &lt; t0 + 5) ˅ connected)">
   <pattern xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
     <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
       <leftOp xsi:type="hu.bme.mit.catleditor:AndForm">
