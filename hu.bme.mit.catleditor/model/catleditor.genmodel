@@ -117,9 +117,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//LeftOp/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//LeftOp/op"/>
     </genClasses>
-    <genClasses ecoreClass="CaTLEditor.ecore#//rightOp">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//rightOp/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//rightOp/op"/>
+    <genClasses ecoreClass="CaTLEditor.ecore#//RightOp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//RightOp/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//RightOp/op"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

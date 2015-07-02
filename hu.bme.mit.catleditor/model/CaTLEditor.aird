@@ -2152,9 +2152,9 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_vbFsECC8EeWGe5iAPhbdag" name="rightOp" tooltipText="" outgoingEdges="_2OItMCC8EeWGe5iAPhbdag" incomingEdges="_XtjswOgGEeSea4HN5oYCXQ _BennVxmIEeWqSr4O7cJ4KQ" width="12" height="10">
-        <target xmi:type="ecore:EClass" href="CaTLEditor.ecore#//rightOp"/>
-        <semanticElements xmi:type="ecore:EClass" href="CaTLEditor.ecore#//rightOp"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_vbFsECC8EeWGe5iAPhbdag" name="RightOp" tooltipText="" outgoingEdges="_2OItMCC8EeWGe5iAPhbdag" incomingEdges="_XtjswOgGEeSea4HN5oYCXQ _BennVxmIEeWqSr4O7cJ4KQ" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="CaTLEditor.ecore#//RightOp"/>
+        <semanticElements xmi:type="ecore:EClass" href="CaTLEditor.ecore#//RightOp"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2163,8 +2163,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_y1FtwCC8EeWGe5iAPhbdag" name="name : EString" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//rightOp/name"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//rightOp/name"/>
+          <target xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//RightOp/name"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//RightOp/name"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_0NFbcCC8EeWGe5iAPhbdag" labelAlignment="LEFT">
             <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
           </ownedStyle>
@@ -2172,8 +2172,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2OItMCC8EeWGe5iAPhbdag" name="[1..1] op" sourceNode="_vbFsECC8EeWGe5iAPhbdag" targetNode="_ZBna0Of0EeSVWOMSyNvhiw">
-        <target xmi:type="ecore:EReference" href="CaTLEditor.ecore#//rightOp/op"/>
-        <semanticElements xmi:type="ecore:EReference" href="CaTLEditor.ecore#//rightOp/op"/>
+        <target xmi:type="ecore:EReference" href="CaTLEditor.ecore#//RightOp/op"/>
+        <semanticElements xmi:type="ecore:EReference" href="CaTLEditor.ecore#//RightOp/op"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_6uAKwCC8EeWGe5iAPhbdag" description="_eq_QgBmsEeWqSr4O7cJ4KQ" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_6uAKwSC8EeWGe5iAPhbdag" showIcon="false">
             <labelFormat>bold</labelFormat>
