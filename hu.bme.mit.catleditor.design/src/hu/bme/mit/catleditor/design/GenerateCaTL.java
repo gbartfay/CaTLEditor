@@ -19,13 +19,9 @@ public class GenerateCaTL implements IExternalJavaAction {
 	@Override
 	public void execute(Collection<? extends EObject> selections,
 			Map<String, Object> parameters) {
-		EObject catlexpr = getSemanticTarget(selections);
-		if (catlexpr instanceof CaTLExpressionImpl) {
-            CaTLExpressionImpl root = (CaTLExpressionImpl) catlexpr;
-            generateExpression(root);
-            
-        }
-		//System.out.println("Mukodik az external java action!");
+		CaTLExpressionImpl catlexpr = getSemanticTarget(selections);
+        generateExpression(catlexpr);
+
 		
 	}
 
@@ -176,7 +172,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 		}
 	}
 	
-    private EObject getSemanticTarget(Collection<? extends EObject> selections) {
+    private CaTLExpressionImpl getSemanticTarget(Collection<? extends EObject> selections) {
         if (selections == null || selections.size() != 1) {
             return null;
         } else {
@@ -184,9 +180,12 @@ public class GenerateCaTL implements IExternalJavaAction {
             EObject semanticTarget = null;
             if (selection instanceof DSemanticDecorator) {
                 semanticTarget = ((DSemanticDecorator) selection).getTarget();
-            } 
-            return semanticTarget.eContainer();
-
+            }   
+    		while (!(semanticTarget instanceof CaTLExpressionImpl)) {
+    			semanticTarget = semanticTarget.eContainer();
+    		}
+            CaTLExpressionImpl root = (CaTLExpressionImpl) semanticTarget;
+            return root;
         }
     }
 
