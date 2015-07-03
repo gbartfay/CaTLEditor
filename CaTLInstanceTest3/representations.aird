@@ -2,111 +2,291 @@
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_g5Kn0B5YEeWlgZTfHPIX1A" selectedViews="_0b81gB5ZEeWlgZTfHPIX1A" version="10.0.0.201505222000">
   <semanticResources>InstanceTest3.catleditor</semanticResources>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_0b81gB5ZEeWlgZTfHPIX1A">
-    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_gG1FkCDBEeWLq-z4SKjY2A" name="new CaTL Diagram">
-      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_gG1FkSDBEeWLq-z4SKjY2A" source="DANNOTATION_CUSTOMIZATION_KEY">
-        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_gG1FkiDBEeWLq-z4SKjY2A"/>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_dN7iYCFcEeWa1JgrHIp2nA" name="new CaTL Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_dN7iYSFcEeWa1JgrHIp2nA" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_dN7iYiFcEeWa1JgrHIp2nA"/>
       </ownedAnnotationEntries>
-      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_gKRbICDBEeWLq-z4SKjY2A" source="GMF_DIAGRAMS">
-        <data xmi:type="notation:Diagram" xmi:id="_gKRbISDBEeWLq-z4SKjY2A" type="Sirius" element="_gG1FkCDBEeWLq-z4SKjY2A" measurementUnit="Pixel">
-          <children xmi:type="notation:Node" xmi:id="_gLYOYCDBEeWLq-z4SKjY2A" type="2002" element="_gG1FkyDBEeWLq-z4SKjY2A">
-            <children xmi:type="notation:Node" xmi:id="_gNnqECDBEeWLq-z4SKjY2A" type="5006"/>
-            <children xmi:type="notation:Node" xmi:id="_gNw0ACDBEeWLq-z4SKjY2A" type="7001">
-              <children xmi:type="notation:Node" xmi:id="_gOX4ACDBEeWLq-z4SKjY2A" type="3008" element="_gG1FlSDBEeWLq-z4SKjY2A">
-                <children xmi:type="notation:Node" xmi:id="_gOaUQCDBEeWLq-z4SKjY2A" type="5005"/>
-                <children xmi:type="notation:Node" xmi:id="_gObiYCDBEeWLq-z4SKjY2A" type="7002">
-                  <children xmi:type="notation:Node" xmi:id="_gOcwgCDBEeWLq-z4SKjY2A" type="3007" element="_gG1FlyDBEeWLq-z4SKjY2A">
-                    <children xmi:type="notation:Node" xmi:id="_gOd-oCDBEeWLq-z4SKjY2A" type="5003">
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_gOd-oSDBEeWLq-z4SKjY2A" y="5"/>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_dN8wgCFcEeWa1JgrHIp2nA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_dN8wgSFcEeWa1JgrHIp2nA" type="Sirius" element="_dN7iYCFcEeWa1JgrHIp2nA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_dN8wgyFcEeWa1JgrHIp2nA" type="2002" element="_dN7iYyFcEeWa1JgrHIp2nA">
+            <children xmi:type="notation:Node" xmi:id="_dN9XkCFcEeWa1JgrHIp2nA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_dN9XkSFcEeWa1JgrHIp2nA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_dN9-oCFcEeWa1JgrHIp2nA" type="3008" element="_dN7iZSFcEeWa1JgrHIp2nA">
+                <children xmi:type="notation:Node" xmi:id="_dN-lsCFcEeWa1JgrHIp2nA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_dN-lsSFcEeWa1JgrHIp2nA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_dN_z0SFcEeWa1JgrHIp2nA" type="3007" element="_dN7iZyFcEeWa1JgrHIp2nA">
+                    <children xmi:type="notation:Node" xmi:id="_dOAa4CFcEeWa1JgrHIp2nA" type="5003">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_dOAa4SFcEeWa1JgrHIp2nA" y="5"/>
                     </children>
-                    <children xmi:type="notation:Node" xmi:id="_gOsoICDBEeWLq-z4SKjY2A" type="3003" element="_gG1FmCDBEeWLq-z4SKjY2A">
-                      <styles xmi:type="notation:ShapeStyle" xmi:id="_gOsoISDBEeWLq-z4SKjY2A" fontName="Segoe UI"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gOsoIiDBEeWLq-z4SKjY2A"/>
+                    <children xmi:type="notation:Node" xmi:id="_dOAa4iFcEeWa1JgrHIp2nA" type="3003" element="_dN7iaCFcEeWa1JgrHIp2nA">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_dOAa4yFcEeWa1JgrHIp2nA" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dOAa5CFcEeWa1JgrHIp2nA"/>
                     </children>
-                    <styles xmi:type="notation:ShapeStyle" xmi:id="_gOcwgSDBEeWLq-z4SKjY2A" fontName="Segoe UI" fontHeight="8"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gOcwgiDBEeWLq-z4SKjY2A" x="30" y="28" width="30" height="30"/>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_dN_z0iFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dN_z0yFcEeWa1JgrHIp2nA" x="30" y="30" width="30" height="30"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_gObiYSDBEeWLq-z4SKjY2A"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_gObiYiDBEeWLq-z4SKjY2A"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_dN-lsiFcEeWa1JgrHIp2nA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_dN-lsyFcEeWa1JgrHIp2nA"/>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_dN-ltCFcEeWa1JgrHIp2nA"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_gOX4ASDBEeWLq-z4SKjY2A" fontName="Segoe UI" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gOX4AiDBEeWLq-z4SKjY2A" x="30" y="28"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_dN9-oSFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dN9-oiFcEeWa1JgrHIp2nA"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_gObiYyDBEeWLq-z4SKjY2A" type="3008" element="_gG1FmSDBEeWLq-z4SKjY2A">
-                <children xmi:type="notation:Node" xmi:id="_gOcJcCDBEeWLq-z4SKjY2A" type="5005"/>
-                <children xmi:type="notation:Node" xmi:id="_gOcJcSDBEeWLq-z4SKjY2A" type="7002">
-                  <children xmi:type="notation:Node" xmi:id="_ogXjYCDBEeWLq-z4SKjY2A" type="3007" element="_of9TsCDBEeWLq-z4SKjY2A">
-                    <children xmi:type="notation:Node" xmi:id="_ogYKcCDBEeWLq-z4SKjY2A" type="5003">
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_ogYKcSDBEeWLq-z4SKjY2A" y="5"/>
+              <children xmi:type="notation:Node" xmi:id="_dN_MwCFcEeWa1JgrHIp2nA" type="3008" element="_dN7iaSFcEeWa1JgrHIp2nA">
+                <children xmi:type="notation:Node" xmi:id="_dN_MwyFcEeWa1JgrHIp2nA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_dN_MxCFcEeWa1JgrHIp2nA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_dOBB8CFcEeWa1JgrHIp2nA" type="3008" element="_dN7iayFcEeWa1JgrHIp2nA">
+                    <children xmi:type="notation:Node" xmi:id="_dOBB8yFcEeWa1JgrHIp2nA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_dOBpACFcEeWa1JgrHIp2nA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_dOBpAyFcEeWa1JgrHIp2nA" type="3008" element="_dN7ibSFcEeWa1JgrHIp2nA">
+                        <children xmi:type="notation:Node" xmi:id="_dOCQECFcEeWa1JgrHIp2nA" type="5005"/>
+                        <children xmi:type="notation:Node" xmi:id="_dOCQESFcEeWa1JgrHIp2nA" type="7002">
+                          <styles xmi:type="notation:SortingStyle" xmi:id="_dOCQEiFcEeWa1JgrHIp2nA"/>
+                          <styles xmi:type="notation:FilteringStyle" xmi:id="_dOCQEyFcEeWa1JgrHIp2nA"/>
+                          <styles xmi:type="notation:DrawerStyle" xmi:id="_dOCQFCFcEeWa1JgrHIp2nA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_dOBpBCFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dOBpBSFcEeWa1JgrHIp2nA"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_dOCQFSFcEeWa1JgrHIp2nA" type="3008" element="_dN7ibyFcEeWa1JgrHIp2nA">
+                        <children xmi:type="notation:Node" xmi:id="_dOC3ICFcEeWa1JgrHIp2nA" type="5005"/>
+                        <children xmi:type="notation:Node" xmi:id="_dOC3ISFcEeWa1JgrHIp2nA" type="7002">
+                          <styles xmi:type="notation:SortingStyle" xmi:id="_dOC3IiFcEeWa1JgrHIp2nA"/>
+                          <styles xmi:type="notation:FilteringStyle" xmi:id="_dOC3IyFcEeWa1JgrHIp2nA"/>
+                          <styles xmi:type="notation:DrawerStyle" xmi:id="_dOC3JCFcEeWa1JgrHIp2nA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_dOCQFiFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dOCQFyFcEeWa1JgrHIp2nA" x="40"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_dOBpASFcEeWa1JgrHIp2nA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_dOBpAiFcEeWa1JgrHIp2nA"/>
                     </children>
-                    <children xmi:type="notation:Node" xmi:id="_ogYxgCDBEeWLq-z4SKjY2A" type="3003" element="_ogHEsCDBEeWLq-z4SKjY2A">
-                      <styles xmi:type="notation:ShapeStyle" xmi:id="_ogYxgSDBEeWLq-z4SKjY2A" fontName="Segoe UI"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogYxgiDBEeWLq-z4SKjY2A"/>
-                    </children>
-                    <styles xmi:type="notation:ShapeStyle" xmi:id="_ogXjYSDBEeWLq-z4SKjY2A" fontName="Segoe UI" fontHeight="8"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogXjYiDBEeWLq-z4SKjY2A" x="30" y="31" width="30" height="30"/>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_dOBB8SFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dOBB8iFcEeWa1JgrHIp2nA" x="30" y="30"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_gOcJciDBEeWLq-z4SKjY2A"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_gOcJcyDBEeWLq-z4SKjY2A"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_dN_MxSFcEeWa1JgrHIp2nA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_dN_MxiFcEeWa1JgrHIp2nA"/>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_dN_z0CFcEeWa1JgrHIp2nA"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_gObiZCDBEeWLq-z4SKjY2A" fontName="Segoe UI" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gObiZSDBEeWLq-z4SKjY2A" x="210" y="32"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_dN_MwSFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dN_MwiFcEeWa1JgrHIp2nA" x="101"/>
               </children>
-              <styles xmi:type="notation:SortingStyle" xmi:id="_gNxbECDBEeWLq-z4SKjY2A"/>
-              <styles xmi:type="notation:FilteringStyle" xmi:id="_gNxbESDBEeWLq-z4SKjY2A"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_dN9XkiFcEeWa1JgrHIp2nA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_dN9XkyFcEeWa1JgrHIp2nA"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_gLYOYSDBEeWLq-z4SKjY2A" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gLYOYiDBEeWLq-z4SKjY2A"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dN8whCFcEeWa1JgrHIp2nA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dN8whSFcEeWa1JgrHIp2nA"/>
           </children>
-          <styles xmi:type="notation:DiagramStyle" xmi:id="_gKRbIiDBEeWLq-z4SKjY2A"/>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_dN8wgiFcEeWa1JgrHIp2nA"/>
         </data>
       </ownedAnnotationEntries>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_gG1FkyDBEeWLq-z4SKjY2A" name="UntilOut">
-        <target xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@pattern"/>
-        <semanticElements xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@pattern"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_gG1FlCDBEeWLq-z4SKjY2A">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7iYyFcEeWa1JgrHIp2nA" name="UntilOut" childrenPresentation="HorizontalStack">
+        <target xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@op"/>
+        <semanticElements xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@op"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7iZCFcEeWa1JgrHIp2nA">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']"/>
-        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_gG1FlSDBEeWLq-z4SKjY2A">
-          <target xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@leftOp"/>
-          <semanticElements xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@leftOp"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_gG1FliDBEeWLq-z4SKjY2A" backgroundColor="255,245,181">
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7iZSFcEeWa1JgrHIp2nA" name="left side of until">
+          <target xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@op/@leftOp"/>
+          <semanticElements xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@op/@leftOp"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7iZiFcEeWa1JgrHIp2nA" backgroundColor="255,245,181">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='beforeuntil']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='beforeuntil']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_gG1FlyDBEeWLq-z4SKjY2A" name="leftProp" width="3" height="3" resizeKind="NSEW">
-            <target xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@leftOp/@op"/>
-            <semanticElements xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@leftOp/@op"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_gG1FmCDBEeWLq-z4SKjY2A" showIcon="false" borderColor="239,41,41" labelPosition="node" color="255,255,255">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dN7iZyFcEeWa1JgrHIp2nA" name="leftProp" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@op/@leftOp/@op"/>
+            <semanticElements xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@op/@leftOp/@op"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_dN7iaCFcEeWa1JgrHIp2nA" showIcon="false" borderColor="239,41,41" labelPosition="node" color="255,255,255">
               <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']/@conditionnalStyles.0/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']"/>
           </ownedDiagramElements>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_gG1FmSDBEeWLq-z4SKjY2A">
-          <target xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp"/>
-          <semanticElements xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_gG1FmiDBEeWLq-z4SKjY2A" backgroundColor="138,226,52" foregroundColor="194,239,255">
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7iaSFcEeWa1JgrHIp2nA" name="right side of until">
+          <target xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@op/@rightOp"/>
+          <semanticElements xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@op/@rightOp"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7iaiFcEeWa1JgrHIp2nA" backgroundColor="138,226,52" foregroundColor="194,239,255">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='afteruntil']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='afteruntil']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_of9TsCDBEeWLq-z4SKjY2A" name="rightProp" width="3" height="3" resizeKind="NSEW">
-            <target xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op"/>
-            <semanticElements xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_ogHEsCDBEeWLq-z4SKjY2A" showIcon="false" borderColor="239,41,41" labelPosition="node" color="255,255,255">
-              <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']/@conditionnalStyles.0/@style"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7iayFcEeWa1JgrHIp2nA" childrenPresentation="HorizontalStack">
+            <target xmi:type="hu.bme.mit.catleditor:ImpForm" href="InstanceTest3.catleditor#//@op/@rightOp/@op"/>
+            <semanticElements xmi:type="hu.bme.mit.catleditor:ImpForm" href="InstanceTest3.catleditor#//@op/@rightOp/@op"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7ibCFcEeWa1JgrHIp2nA">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@style"/>
             </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']"/>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']"/>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7ibSFcEeWa1JgrHIp2nA">
+              <target xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@op/@rightOp/@op/@leftOp"/>
+              <semanticElements xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@op/@rightOp/@op/@leftOp"/>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7ibiFcEeWa1JgrHIp2nA">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='beforeimp']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='beforeimp']"/>
+            </ownedDiagramElements>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_dN7ibyFcEeWa1JgrHIp2nA">
+              <target xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@op/@rightOp/@op/@rightOp"/>
+              <semanticElements xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@op/@rightOp/@op/@rightOp"/>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_dN7icCFcEeWa1JgrHIp2nA">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='afterimp']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='afterimp']"/>
+            </ownedDiagramElements>
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
       <description xmi:type="description_1:DiagramDescription" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']"/>
-      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_gG1FmyDBEeWLq-z4SKjY2A"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_dN7icSFcEeWa1JgrHIp2nA"/>
       <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@defaultLayer"/>
       <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']"/>
       <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']"/>
       <target xmi:type="hu.bme.mit.catleditor:CaTLExpression" href="InstanceTest3.catleditor#/"/>
     </ownedRepresentations>
     <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_5gcAoCFaEeW6_KIU-oBoRA">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_5iUP8CFaEeW6_KIU-oBoRA" name="CaTL Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_5iU3ACFaEeW6_KIU-oBoRA" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_5iU3ASFaEeW6_KIU-oBoRA"/>
+      </ownedAnnotationEntries>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_5ii5cCFaEeW6_KIU-oBoRA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_5ii5cSFaEeW6_KIU-oBoRA" type="Sirius" element="_5iUP8CFaEeW6_KIU-oBoRA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_5ijggCFaEeW6_KIU-oBoRA" type="2002" element="_5iU3AiFaEeW6_KIU-oBoRA">
+            <children xmi:type="notation:Node" xmi:id="_5ijggyFaEeW6_KIU-oBoRA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_5ikHkCFaEeW6_KIU-oBoRA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_5ikHkyFaEeW6_KIU-oBoRA" type="3008" element="_5iU3BCFaEeW6_KIU-oBoRA">
+                <children xmi:type="notation:Node" xmi:id="_5ikuoCFaEeW6_KIU-oBoRA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_5ikuoSFaEeW6_KIU-oBoRA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_5itRhCFaEeW6_KIU-oBoRA" type="3007" element="_5iU3BiFaEeW6_KIU-oBoRA">
+                    <children xmi:type="notation:Node" xmi:id="_5it4kCFaEeW6_KIU-oBoRA" type="5003">
+                      <layoutConstraint xmi:type="notation:Location" xmi:id="_5it4kSFaEeW6_KIU-oBoRA" y="5"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_5it4kiFaEeW6_KIU-oBoRA" type="3003" element="_5iU3ByFaEeW6_KIU-oBoRA">
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_5it4kyFaEeW6_KIU-oBoRA" fontName="Segoe UI"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5it4lCFaEeW6_KIU-oBoRA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5itRhSFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5itRhiFaEeW6_KIU-oBoRA" width="30" height="30"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_5ikuoiFaEeW6_KIU-oBoRA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_5ikuoyFaEeW6_KIU-oBoRA"/>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_5ircUCFaEeW6_KIU-oBoRA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_5ikHlCFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ikHlSFaEeW6_KIU-oBoRA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_5isDYCFaEeW6_KIU-oBoRA" type="3008" element="_5iU3CCFaEeW6_KIU-oBoRA">
+                <children xmi:type="notation:Node" xmi:id="_5isqcCFaEeW6_KIU-oBoRA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_5itRgCFaEeW6_KIU-oBoRA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_5iufoCFaEeW6_KIU-oBoRA" type="3008" element="_5iU3CiFaEeW6_KIU-oBoRA">
+                    <children xmi:type="notation:Node" xmi:id="_5ivtwCFaEeW6_KIU-oBoRA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_5iwU0CFaEeW6_KIU-oBoRA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_5iwU0yFaEeW6_KIU-oBoRA" type="3008" element="_5iU3DCFaEeW6_KIU-oBoRA">
+                        <children xmi:type="notation:Node" xmi:id="_5iw74CFaEeW6_KIU-oBoRA" type="5005"/>
+                        <children xmi:type="notation:Node" xmi:id="_5iw74SFaEeW6_KIU-oBoRA" type="7002">
+                          <styles xmi:type="notation:SortingStyle" xmi:id="_5iw74iFaEeW6_KIU-oBoRA"/>
+                          <styles xmi:type="notation:FilteringStyle" xmi:id="_5iw74yFaEeW6_KIU-oBoRA"/>
+                          <styles xmi:type="notation:DrawerStyle" xmi:id="_5iw75CFaEeW6_KIU-oBoRA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_5iwU1CFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5iwU1SFaEeW6_KIU-oBoRA"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_5ixi8CFaEeW6_KIU-oBoRA" type="3008" element="_5iU3DiFaEeW6_KIU-oBoRA">
+                        <children xmi:type="notation:Node" xmi:id="_5ixi8yFaEeW6_KIU-oBoRA" type="5005"/>
+                        <children xmi:type="notation:Node" xmi:id="_5ixi9CFaEeW6_KIU-oBoRA" type="7002">
+                          <styles xmi:type="notation:SortingStyle" xmi:id="_5ixi9SFaEeW6_KIU-oBoRA"/>
+                          <styles xmi:type="notation:FilteringStyle" xmi:id="_5ixi9iFaEeW6_KIU-oBoRA"/>
+                          <styles xmi:type="notation:DrawerStyle" xmi:id="_5ixi9yFaEeW6_KIU-oBoRA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_5ixi8SFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ixi8iFaEeW6_KIU-oBoRA" x="40"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_5iwU0SFaEeW6_KIU-oBoRA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_5iwU0iFaEeW6_KIU-oBoRA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5iufoSFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5iufoiFaEeW6_KIU-oBoRA"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_5itRgSFaEeW6_KIU-oBoRA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_5itRgiFaEeW6_KIU-oBoRA"/>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_5itRgyFaEeW6_KIU-oBoRA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_5isDYSFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5isDYiFaEeW6_KIU-oBoRA" x="40"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_5ikHkSFaEeW6_KIU-oBoRA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_5ikHkiFaEeW6_KIU-oBoRA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_5ijggSFaEeW6_KIU-oBoRA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ijggiFaEeW6_KIU-oBoRA"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_5ii5ciFaEeW6_KIU-oBoRA"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3AiFaEeW6_KIU-oBoRA" name="UntilOut" childrenPresentation="HorizontalStack">
+        <target xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@pattern"/>
+        <semanticElements xmi:type="hu.bme.mit.catleditor:UntilForm" href="InstanceTest3.catleditor#//@pattern"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3AyFaEeW6_KIU-oBoRA">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3BCFaEeW6_KIU-oBoRA" name="left side of until">
+          <target xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@leftOp"/>
+          <semanticElements xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@leftOp"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3BSFaEeW6_KIU-oBoRA" backgroundColor="255,245,181">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='beforeuntil']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='beforeuntil']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5iU3BiFaEeW6_KIU-oBoRA" name="leftProp" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@leftOp/@op"/>
+            <semanticElements xmi:type="hu.bme.mit.catleditor:Propositions" href="InstanceTest3.catleditor#//@pattern/@leftOp/@op"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_5iU3ByFaEeW6_KIU-oBoRA" showIcon="false" borderColor="239,41,41" labelPosition="node" color="255,255,255">
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']/@conditionnalStyles.0/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='negation']/@subNodeMappings[name='propositions2']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3CCFaEeW6_KIU-oBoRA" name="right side of until">
+          <target xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp"/>
+          <semanticElements xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3CSFaEeW6_KIU-oBoRA" backgroundColor="138,226,52" foregroundColor="194,239,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='afteruntil']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']/@subContainerMappings[name='afteruntil']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3CiFaEeW6_KIU-oBoRA" childrenPresentation="HorizontalStack">
+            <target xmi:type="hu.bme.mit.catleditor:ImpForm" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op"/>
+            <semanticElements xmi:type="hu.bme.mit.catleditor:ImpForm" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3CyFaEeW6_KIU-oBoRA">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']"/>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3DCFaEeW6_KIU-oBoRA">
+              <target xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op/@leftOp"/>
+              <semanticElements xmi:type="hu.bme.mit.catleditor:LeftOp" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op/@leftOp"/>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3DSFaEeW6_KIU-oBoRA">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='beforeimp']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='beforeimp']"/>
+            </ownedDiagramElements>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5iU3DiFaEeW6_KIU-oBoRA">
+              <target xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op/@rightOp"/>
+              <semanticElements xmi:type="hu.bme.mit.catleditor:RightOp" href="InstanceTest3.catleditor#//@pattern/@rightOp/@op/@rightOp"/>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5iU3DyFaEeW6_KIU-oBoRA">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='afterimp']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']/@subContainerMappings[name='afterimp']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_5iU3ECFaEeW6_KIU-oBoRA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']"/>
+      <target xmi:type="hu.bme.mit.catleditor:CaTLExpression" href="InstanceTest3.catleditor#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/hu.bme.mit.catleditor.design/description/catleditor.odesign#//@ownedViewpoints[name='catleditor']"/>
   </ownedViews>
 </viewpoint:DAnalysis>

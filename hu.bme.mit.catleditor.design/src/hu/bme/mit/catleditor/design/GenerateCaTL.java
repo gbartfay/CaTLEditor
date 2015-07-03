@@ -38,7 +38,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 	private void generateExpression(CaTLExpressionImpl root) {
 		StringBuilder out = new StringBuilder();
 		//TODO rekurzio
-		Pattern pattern = root.getPattern();
+		Pattern pattern = root.getOp();
 		handleInnerElements(out, pattern);
 
 		root.setOutput(out.toString());

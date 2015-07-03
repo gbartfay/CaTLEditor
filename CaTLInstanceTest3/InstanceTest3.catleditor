@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor">
-  <pattern xsi:type="hu.bme.mit.catleditor:UntilForm" name="UntilOut">
+  <op xsi:type="hu.bme.mit.catleditor:UntilForm" name="UntilOut">
     <rightOp>
-      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="rightProp"/>
+      <op xsi:type="hu.bme.mit.catleditor:ImpForm">
+        <leftOp>
+          <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp"/>
+        </leftOp>
+        <rightOp/>
+      </op>
     </rightOp>
     <leftOp>
       <op xsi:type="hu.bme.mit.catleditor:Propositions" name="leftProp"/>
     </leftOp>
-  </pattern>
+  </op>
 </hu.bme.mit.catleditor:CaTLExpression>
