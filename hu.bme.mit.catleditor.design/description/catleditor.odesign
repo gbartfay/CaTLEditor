@@ -32,14 +32,14 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="contextconst" label="ContextConst" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="ContextConst">
+        <nodeMappings name="contextconst" label="ContextConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="ContextConst">
           <style xsi:type="style:BundledImageDescription" labelPosition="node" resizeKind="NSEW" shape="triangle">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="propertyconst" label="PropertyConst" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="PropertyConst">
+        <nodeMappings name="propertyconst" label="PropertyConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="PropertyConst">
           <style xsi:type="style:LozengeNodeDescription" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -151,6 +151,27 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="generate" id="hu.bme.mit.catleditor.design.GenerateCaTL"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createpropositions" label="Propositions" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@nodeMappings[name='propositions']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Propositions" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createcntxsconst" label="ContextConst" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@nodeMappings[name='contextconst']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="ContextConst" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createpropconst" label="PropertyConst" nodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@nodeMappings[name='propertyconst']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="PropertyConst" referenceName="op"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
