@@ -2125,9 +2125,9 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Oe8NkBmJEeWqSr4O7cJ4KQ" name="[1..1] pattern" sourceNode="_D6LOUBmJEeWqSr4O7cJ4KQ" targetNode="_ZBna0Of0EeSVWOMSyNvhiw">
-        <target xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/pattern"/>
-        <semanticElements xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/pattern"/>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Oe8NkBmJEeWqSr4O7cJ4KQ" name="[1..1] op" sourceNode="_D6LOUBmJEeWqSr4O7cJ4KQ" targetNode="_ZBna0Of0EeSVWOMSyNvhiw">
+        <target xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/op"/>
+        <semanticElements xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/op"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_liI5EBmtEeWqSr4O7cJ4KQ" description="_eq_QgBmsEeWqSr4O7cJ4KQ" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_liI5EhmtEeWqSr4O7cJ4KQ" showIcon="false">
             <labelFormat>bold</labelFormat>

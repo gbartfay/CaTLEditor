@@ -129,8 +129,8 @@
         eType="#//RightOp" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaTLExpression">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pattern" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//Contexts"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sysProp" lowerBound="1"

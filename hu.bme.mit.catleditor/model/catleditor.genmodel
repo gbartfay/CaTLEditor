@@ -108,7 +108,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//CaTLExpression">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/pattern"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/op"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/context"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/sysProp"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//CaTLExpression/output"/>
