@@ -197,6 +197,16 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Future" referenceName="op"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createuntil" label="Until" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='until']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UntilForm" referenceName="op">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LeftOp" referenceName="leftOp"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="RightOp" referenceName="rightOp"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <toolSections name="boole" label="Boole">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="createand" label="And" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='and']">
@@ -218,6 +228,16 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="NegationForm" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createimplication" label="Implication" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='implication']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="ImpForm" referenceName="op">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LeftOp" referenceName="leftOp"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="RightOp" referenceName="rightOp"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>
