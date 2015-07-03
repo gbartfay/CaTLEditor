@@ -48,9 +48,7 @@
         eType="#//LeftOp" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OrForm" eSuperTypes="#//BooleForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="2" upperBound="-1"
         eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NegationForm" eSuperTypes="#//BooleForm">
@@ -117,9 +115,7 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AndForm" eSuperTypes="#//BooleForm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="leftOp" lowerBound="1"
-        eType="#//Pattern" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rightOp" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="2" upperBound="-1"
         eType="#//Pattern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImpForm" eSuperTypes="#//BooleForm">

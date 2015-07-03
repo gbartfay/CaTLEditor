@@ -56,8 +56,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//UntilForm/leftOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//OrForm">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/leftOp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//OrForm/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//NegationForm">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//NegationForm/op"/>
@@ -100,8 +99,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Future/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//AndForm">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/leftOp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/rightOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//AndForm/op"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//ImpForm">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/leftOp"/>
