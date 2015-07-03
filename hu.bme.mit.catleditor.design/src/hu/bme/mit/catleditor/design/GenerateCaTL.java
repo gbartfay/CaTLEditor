@@ -31,13 +31,11 @@ public class GenerateCaTL implements IExternalJavaAction {
 
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 	
 	private void generateExpression(CaTLExpressionImpl root) {
 		StringBuilder out = new StringBuilder();
-		//TODO rekurzio
 		Pattern pattern = root.getOp();
 		handleInnerElements(out, pattern);
 
@@ -48,22 +46,26 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (pattern instanceof OrForm) {
 			OrForm or = (OrForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (or.getLeftOp()));
-			out = out.append(" ");
-			out = out.append(Character.toChars(709));
-			out = out.append(" ");
-			handleInnerElements(out, (or.getRightOp()));
+			for (Pattern subExp : or.getOp()) {
+				handleInnerElements(out, (subExp));
+				out = out.append(" ");
+				out = out.append(Character.toChars(709));
+				out = out.append(" ");
+			}
+			out.setLength(out.length() - 3);
 			out = out.append(")");
 		}
 		
 		if (pattern instanceof AndForm) {
 			AndForm and = (AndForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (and.getLeftOp()));
-			out = out.append(" ");
-			out = out.append(Character.toChars(708));
-			out = out.append(" ");
-			handleInnerElements(out, (and.getRightOp()));
+			for (Pattern subExp : and.getOp()) {
+				handleInnerElements(out, (subExp));
+				out = out.append(" ");
+				out = out.append(Character.toChars(708));
+				out = out.append(" ");
+			}
+			out.setLength(out.length() - 3);
 			out = out.append(")");
 		}
 		

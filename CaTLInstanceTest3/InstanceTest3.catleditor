@@ -6,7 +6,12 @@
         <leftOp>
           <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp"/>
         </leftOp>
-        <rightOp/>
+        <rightOp>
+          <op xsi:type="hu.bme.mit.catleditor:UntilForm">
+            <rightOp/>
+            <leftOp/>
+          </op>
+        </rightOp>
       </op>
     </rightOp>
     <leftOp>

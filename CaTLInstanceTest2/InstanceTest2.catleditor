@@ -2,11 +2,11 @@
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X((started ˄ t &lt; t0 + 5) ˅ connected)">
   <op xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
     <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
-      <leftOp xsi:type="hu.bme.mit.catleditor:AndForm">
-        <leftOp xsi:type="hu.bme.mit.catleditor:Propositions" name="prop1" prop="//@sysProp/@props.2"/>
-        <rightOp xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
-      </leftOp>
-      <rightOp xsi:type="hu.bme.mit.catleditor:Propositions" name="Prop2" prop="//@sysProp/@props.0"/>
+      <op xsi:type="hu.bme.mit.catleditor:AndForm" name="And">
+        <op xsi:type="hu.bme.mit.catleditor:Propositions" name="start" prop="//@sysProp/@props.2"/>
+        <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
+      </op>
+      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
     </op>
   </op>
   <context>
