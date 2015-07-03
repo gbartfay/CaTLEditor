@@ -175,6 +175,29 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <toolSections name="temporal" label="Temporal logic">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnext" label="Next" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="NextForm" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createglobally" label="Globally" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='globally']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Globally" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createfuture" label="Future" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='future']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Future" referenceName="op"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </additionalLayers>
       <additionalLayers name="cntxlayer" label="Contexts Layer" activeByDefault="true">
         <edgeMappings name="connection" label="Connection" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" sourceMapping="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']" targetMapping="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']" targetFinderExpression="feature:rightNode" sourceFinderExpression="feature:leftNode" domainClass="Connection" useDomainElement="true">
