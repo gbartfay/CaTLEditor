@@ -107,7 +107,6 @@ public class GenerateCaTL implements IExternalJavaAction {
 			out = out.append(")");
 		}
 		
-		//Abstract: nem kell tovabb hivni belole
 		if (pattern instanceof AbstractAtomicFormulas) {
 			AbstractAtomicFormulas aaf = (AbstractAtomicFormulas) pattern;
 			handleAbstractElements(out, aaf);

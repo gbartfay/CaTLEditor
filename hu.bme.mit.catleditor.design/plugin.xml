@@ -13,5 +13,9 @@
            actionClass="hu.bme.mit.catleditor.design.GenerateCaTL"
            id="hu.bme.mit.catleditor.design.GenerateCaTL">
      </javaActions>
+     <javaActions
+           actionClass="hu.bme.mit.catleditor.design.TestPattern"
+           id="hu.bme.mit.catleditor.design.testpattern">
+     </javaActions>
   </extension>
 </plugin>
