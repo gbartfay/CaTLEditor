@@ -1062,6 +1062,22 @@
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IIsORiC9EeWGe5iAPhbdag" id="(0.5,0.5)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IIsORyC9EeWGe5iAPhbdag" id="(0.425,0.79)"/>
           </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_lf2oYCPlEeW4Labi6Hrj3w" type="4001" element="_lYcY0CPlEeW4Labi6Hrj3w" source="_D6sLsBmJEeWqSr4O7cJ4KQ" target="_ZCb6MOf0EeSVWOMSyNvhiw">
+            <children xmi:type="notation:Node" xmi:id="_lgx1cCPlEeW4Labi6Hrj3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lgx1cSPlEeW4Labi6Hrj3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lg7mcCPlEeW4Labi6Hrj3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lg7mcSPlEeW4Labi6Hrj3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lg80kCPlEeW4Labi6Hrj3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lg80kSPlEeW4Labi6Hrj3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_lf2oYSPlEeW4Labi6Hrj3w" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_lf2oYiPlEeW4Labi6Hrj3w" fontColor="7490599" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lf2oYyPlEeW4Labi6Hrj3w" points="[-10, 0, 0, -117]$[-10, 117, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lhV2ICPlEeW4Labi6Hrj3w" id="(0.2966101694915254,1.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lhV2ISPlEeW4Labi6Hrj3w" id="(0.1694915254237288,0.0)"/>
+          </edges>
         </data>
       </ownedAnnotationEntries>
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Gsg2UOf1EeSVWOMSyNvhiw" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -1097,7 +1113,7 @@
           </computedStyleDescriptions>
         </data>
       </ownedAnnotationEntries>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ZBna0Of0EeSVWOMSyNvhiw" name="Pattern" tooltipText="" incomingEdges="_BBMpkOgGEeSea4HN5oYCXQ _NZjGUOgGEeSea4HN5oYCXQ _ToHhYOgGEeSea4HN5oYCXQ _tYFnkPgBEeSTzoqsyCm_Sw _zZFgsPgBEeSTzoqsyCm_Sw _0RWlcPgBEeSTzoqsyCm_Sw _wGs5QBmHEeWqSr4O7cJ4KQ _1eYIkBmHEeWqSr4O7cJ4KQ _Aw93IBmIEeWqSr4O7cJ4KQ _Oe8NkBmJEeWqSr4O7cJ4KQ _2OItMCC8EeWGe5iAPhbdag _8A_coCC8EeWGe5iAPhbdag" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ZBna0Of0EeSVWOMSyNvhiw" name="Pattern" tooltipText="" incomingEdges="_BBMpkOgGEeSea4HN5oYCXQ _NZjGUOgGEeSea4HN5oYCXQ _ToHhYOgGEeSea4HN5oYCXQ _tYFnkPgBEeSTzoqsyCm_Sw _zZFgsPgBEeSTzoqsyCm_Sw _0RWlcPgBEeSTzoqsyCm_Sw _wGs5QBmHEeWqSr4O7cJ4KQ _1eYIkBmHEeWqSr4O7cJ4KQ _Aw93IBmIEeWqSr4O7cJ4KQ _Oe8NkBmJEeWqSr4O7cJ4KQ _2OItMCC8EeWGe5iAPhbdag _8A_coCC8EeWGe5iAPhbdag _lYcY0CPlEeW4Labi6Hrj3w" width="12" height="10">
         <target xmi:type="ecore:EClass" href="CaTLEditor.ecore#//Pattern"/>
         <semanticElements xmi:type="ecore:EClass" href="CaTLEditor.ecore#//Pattern"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2054,7 +2070,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_D6LOUBmJEeWqSr4O7cJ4KQ" name="CaTLExpression" tooltipText="" outgoingEdges="_Oe8NkBmJEeWqSr4O7cJ4KQ _3piU8PLtEeSzu76eiTVeow _EFLcoPL2EeSzu76eiTVeow" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_D6LOUBmJEeWqSr4O7cJ4KQ" name="CaTLExpression" tooltipText="" outgoingEdges="_Oe8NkBmJEeWqSr4O7cJ4KQ _3piU8PLtEeSzu76eiTVeow _EFLcoPL2EeSzu76eiTVeow _lYcY0CPlEeW4Labi6Hrj3w" width="12" height="10">
         <target xmi:type="ecore:EClass" href="CaTLEditor.ecore#//CaTLExpression"/>
         <semanticElements xmi:type="ecore:EClass" href="CaTLEditor.ecore#//CaTLExpression"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2138,6 +2154,19 @@
             <labelFormat>bold</labelFormat>
           </centerLabelStyle>
           <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_9waL0iC8EeWGe5iAPhbdag" labelSize="6" showIcon="false" labelColor="39,76,114"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lYcY0CPlEeW4Labi6Hrj3w" name="[0..*] store" sourceNode="_D6LOUBmJEeWqSr4O7cJ4KQ" targetNode="_ZBna0Of0EeSVWOMSyNvhiw">
+        <target xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/store"/>
+        <semanticElements xmi:type="ecore:EReference" href="CaTLEditor.ecore#//CaTLExpression/store"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_laIa4CPlEeW4Labi6Hrj3w" description="_UEWIsvLuEeSzu76eiTVeow" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_laIa4SPlEeW4Labi6Hrj3w" showIcon="false">
+            <customFeatures>labelSize</customFeatures>
+          </centerLabelStyle>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_laIa4iPlEeW4Labi6Hrj3w" showIcon="false" labelColor="39,76,114">
+            <customFeatures>labelSize</customFeatures>
+          </endLabelStyle>
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>
