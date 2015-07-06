@@ -174,20 +174,6 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="PropertyConst" referenceName="op"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:PopupMenu" name="patternmenu" label="Pattern Menu">
-            <menuItemDescription xsi:type="tool_1:OperationAction" name="patternsave" label="PatternSave">
-              <view name="views"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="saveaction" id="hu.bme.mit.catleditor.design.PatternSave"/>
-              </initialOperation>
-            </menuItemDescription>
-            <menuItemDescription xsi:type="tool_1:OperationAction" name="patternload" label="PatternLoad">
-              <view name="views"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="loadaction" id="hu.bme.mit.catleditor.design.PatternLoad"/>
-              </initialOperation>
-            </menuItemDescription>
-          </ownedTools>
         </toolSections>
         <toolSections name="temporal" label="Temporal logic">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnext" label="Next" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='next']">
@@ -376,6 +362,31 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Property" referenceName="properties" variableName="instanceProp"/>
             </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+      <additionalLayers name="storelayer" label="Store Layer" activeByDefault="true">
+        <nodeMappings name="storeitem" label="Store Item" semanticCandidatesExpression="[store/]" domainClass="Pattern">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="custompatterns" label="Custom Patterns">
+          <ownedTools xsi:type="tool_1:PopupMenu" name="patternmenu" label="Pattern Menu">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="patternsave" label="PatternSave">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="saveaction" id="hu.bme.mit.catleditor.design.PatternSave"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="patternload" label="PatternLoad">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="loadaction" id="hu.bme.mit.catleditor.design.PatternLoad"/>
+              </initialOperation>
+            </menuItemDescription>
           </ownedTools>
         </toolSections>
       </additionalLayers>

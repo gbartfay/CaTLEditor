@@ -9,18 +9,19 @@ import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 public class PatternLoad implements IExternalJavaAction {
 
 	public PatternLoad() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
-		// TODO Auto-generated method stub
+		// TODO selection atmasolasa a root op refrerenciajaba, ott levo torlese
+		//TODO lehessen mashova is rakni? Jo lenne! megoldhato?
 
 	}
 
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {
-		// TODO Auto-generated method stub
+		// TODO csak a root store referenciájaira lehessen
+		//TODO csak egy kivalasztott lehessen
 		return false;
 	}
 

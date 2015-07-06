@@ -7,6 +7,7 @@
         <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
       </op>
       <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
+      <op xsi:type="hu.bme.mit.catleditor:PropertyConst" name="" usedProp="//@context/@cntxs.0/@nodes.4/@properties.0" value="5"/>
     </op>
   </op>
   <context>
@@ -18,7 +19,7 @@
       <nodes name="Node3"/>
       <nodes name="node 4"/>
       <nodes name="Node 5">
-        <properties name="node 5 property"/>
+        <properties name="speed"/>
       </nodes>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2"/>

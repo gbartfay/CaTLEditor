@@ -9,18 +9,18 @@ import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 public class PatternSave implements IExternalJavaAction {
 
 	public PatternSave() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
-		// TODO Auto-generated method stub
+		// TODO kivalasztott atmasolasa a store ref-be
 
 	}
 
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {
-		// TODO Auto-generated method stub
+		// TODO csak egy kijelolt lehessen
+		//TODO mindig a kijelolted, vagy a legmelyebbet masolja?
 		return false;
 	}
 

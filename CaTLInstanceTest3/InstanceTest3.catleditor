@@ -25,4 +25,5 @@
   <sysProp>
     <props label="connected"/>
   </sysProp>
+  <store xsi:type="hu.bme.mit.catleditor:Globally" name="store1"/>
 </hu.bme.mit.catleditor:CaTLExpression>
