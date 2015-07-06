@@ -17,5 +17,13 @@
            actionClass="hu.bme.mit.catleditor.design.TestPattern"
            id="hu.bme.mit.catleditor.design.testpattern">
      </javaActions>
+     <javaActions
+           actionClass="hu.bme.mit.catleditor.design.PatternSave"
+           id="hu.bme.mit.catleditor.design.PatternSave">
+     </javaActions>
+     <javaActions
+           actionClass="hu.bme.mit.catleditor.design.PatternLoad"
+           id="hu.bme.mit.catleditor.design.PatternLoad">
+     </javaActions>
   </extension>
 </plugin>
