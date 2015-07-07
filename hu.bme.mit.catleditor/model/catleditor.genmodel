@@ -34,7 +34,7 @@
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//TimingConst">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//TimingConst/relation"/>
-      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//TimingConst/dynamicClock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//TimingConst/dynamicClock"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//TimingConst/StaticTimingVariable"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//ContextConst">

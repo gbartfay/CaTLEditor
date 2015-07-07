@@ -16,7 +16,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="#//ComparisonEnum"
         defaultValueLiteral="LESS"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dynamicClock" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar"
-        changeable="false" defaultValueLiteral="t"/>
+        defaultValueLiteral="t"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="StaticTimingVariable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ContextConst" eSuperTypes="#//AbstractAtomicFormulas">
