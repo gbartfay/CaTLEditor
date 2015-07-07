@@ -17,6 +17,7 @@ public class PatternLoad implements IExternalJavaAction {
 		// TODO lehessen mashova is rakni? Jo lenne! megoldhato? valami olyasmi
 		// kene ahol a helyere hivjak meg, aztán kivalasztjak a beillesztendo
 		// mintat
+		// WIZARD?
 
 	}
 
