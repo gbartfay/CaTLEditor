@@ -25,5 +25,30 @@
   <sysProp>
     <props label="connected"/>
   </sysProp>
-  <store xsi:type="hu.bme.mit.catleditor:Globally" name="store1"/>
+  <store xsi:type="hu.bme.mit.catleditor:Globally" name="store1">
+    <op xsi:type="hu.bme.mit.catleditor:Propositions" prop="//@sysProp/@props.0"/>
+  </store>
+  <store xsi:type="hu.bme.mit.catleditor:ImpForm" name="imp clone">
+    <leftOp>
+      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp" prop="//@sysProp/@props.0"/>
+    </leftOp>
+    <rightOp>
+      <op xsi:type="hu.bme.mit.catleditor:UntilForm">
+        <rightOp>
+          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
+        </rightOp>
+        <leftOp>
+          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
+        </leftOp>
+      </op>
+    </rightOp>
+  </store>
+  <store xsi:type="hu.bme.mit.catleditor:UntilForm" name="until clone">
+    <rightOp>
+      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
+    </rightOp>
+    <leftOp>
+      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
+    </leftOp>
+  </store>
 </hu.bme.mit.catleditor:CaTLExpression>

@@ -374,7 +374,7 @@
           </style>
         </nodeMappings>
         <toolSections name="custompatterns" label="Custom Patterns">
-          <ownedTools xsi:type="tool:ContainerDropDescription" name="testcontdrop" mappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@nodeMappings[name='propositions']">
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="testcontdrop" mappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='storelayer']/@nodeMappings[name='storeitem']">
             <oldContainer name="oldSemanticContainer"/>
             <newContainer name="newSemanticContainer"/>
             <element name="element"/>
