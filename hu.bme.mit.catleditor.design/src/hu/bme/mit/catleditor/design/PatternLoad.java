@@ -18,6 +18,8 @@ public class PatternLoad implements IExternalJavaAction {
 		// kene ahol a helyere hivjak meg, aztán kivalasztjak a beillesztendo
 		// mintat
 		// WIZARD?
+		//selections: a container ahova erkezik
+		System.out.println("teszt kiiras!");
 
 	}
 
@@ -25,7 +27,7 @@ public class PatternLoad implements IExternalJavaAction {
 	public boolean canExecute(Collection<? extends EObject> selections) {
 		// TODO csak a root store referenciájaira lehessen
 		// TODO csak egy kivalasztott lehessen
-		return false;
+		return true;
 	}
 
 }

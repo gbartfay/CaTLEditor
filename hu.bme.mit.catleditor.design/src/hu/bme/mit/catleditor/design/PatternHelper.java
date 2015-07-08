@@ -3,14 +3,12 @@ package hu.bme.mit.catleditor.design;
 import hu.bme.mit.CaTLEditor.AbstractAtomicFormulas;
 import hu.bme.mit.CaTLEditor.AndForm;
 import hu.bme.mit.CaTLEditor.CaTLEditorFactory;
-import hu.bme.mit.CaTLEditor.Context;
 import hu.bme.mit.CaTLEditor.ContextConst;
 import hu.bme.mit.CaTLEditor.Future;
 import hu.bme.mit.CaTLEditor.Globally;
 import hu.bme.mit.CaTLEditor.ImpForm;
 import hu.bme.mit.CaTLEditor.NegationForm;
 import hu.bme.mit.CaTLEditor.NextForm;
-import hu.bme.mit.CaTLEditor.Node;
 import hu.bme.mit.CaTLEditor.OrForm;
 import hu.bme.mit.CaTLEditor.Pattern;
 import hu.bme.mit.CaTLEditor.PropertyConst;
@@ -22,7 +20,6 @@ public class PatternHelper {
 	
 	public static Pattern copyPattern(Pattern source) {
 		Pattern target = null;
-		//TODO
 		if (source instanceof OrForm) {
 			OrForm or = (OrForm) source;
 			OrForm newItem = CaTLEditorFactory.eINSTANCE.createOrForm();
