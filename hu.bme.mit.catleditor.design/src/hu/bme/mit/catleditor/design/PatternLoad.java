@@ -6,6 +6,16 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 
+import hu.bme.mit.CaTLEditor.AndForm;
+import hu.bme.mit.CaTLEditor.Future;
+import hu.bme.mit.CaTLEditor.Globally;
+import hu.bme.mit.CaTLEditor.LeftOp;
+import hu.bme.mit.CaTLEditor.NegationForm;
+import hu.bme.mit.CaTLEditor.NextForm;
+import hu.bme.mit.CaTLEditor.OrForm;
+import hu.bme.mit.CaTLEditor.Pattern;
+import hu.bme.mit.CaTLEditor.RightOp;
+
 public class PatternLoad implements IExternalJavaAction {
 
 	public PatternLoad() {
@@ -13,21 +23,83 @@ public class PatternLoad implements IExternalJavaAction {
 
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
-		// TODO selection atmasolasa a root op refrerenciajaba, ott levo torlese
 		// TODO lehessen mashova is rakni? Jo lenne! megoldhato? valami olyasmi
 		// kene ahol a helyere hivjak meg, aztán kivalasztjak a beillesztendo
 		// mintat
-		// WIZARD?
 		//selections: a container ahova erkezik
-		System.out.println("teszt kiiras!");
-
+		//parameters: element
+		// itt mar biztos, hogy ures, csak masolni kell
+		final EObject selection = selections.iterator().next();
+		Pattern source = (Pattern) parameters.get("element");
+		Pattern element = PatternHelper.copyPattern(source);
+		if (selection instanceof LeftOp) {
+			LeftOp lop = (LeftOp) selection;
+			lop.setOp(element);
+		} else if (selection instanceof RightOp) {
+			RightOp rop = (RightOp) selection;
+			rop.setOp(element);
+		} else if (selection instanceof AndForm) {
+			AndForm and = (AndForm) selection;
+			and.getOp().add(element);
+		} else if (selection instanceof OrForm) {
+			OrForm or = (OrForm) selection;
+			or.getOp().add(element);
+		} else if (selection instanceof NegationForm) {
+			NegationForm item = (NegationForm) selection;
+			item.setOp(element);
+		} else if (selection instanceof Globally) {
+			Globally item = (Globally) selection;
+			item.setOp(element);
+		} else if (selection instanceof Future) {
+			Future item = (Future) selection;
+			item.setOp(element);
+		} else if (selection instanceof NextForm) {
+			NextForm item = (NextForm) selection;
+			item.setOp(element);
+		}
+		//TODO gyoker!!
 	}
 
 	@Override
 	public boolean canExecute(Collection<? extends EObject> selections) {
-		// TODO csak a root store referenciájaira lehessen
-		// TODO csak egy kivalasztott lehessen
-		return true;
+		final EObject selection = selections.iterator().next();
+		if (selection instanceof LeftOp) {
+			LeftOp lop = (LeftOp) selection;
+			if (lop.getOp() == null) {
+				return true;
+			}
+		} else if (selection instanceof RightOp) {
+			RightOp rop = (RightOp) selection;
+			if (rop.getOp() == null) {
+				return true;
+			}
+		} else if (selection instanceof AndForm) {
+			return true;
+		} else if (selection instanceof OrForm) {
+			return true;
+		} else if (selection instanceof NegationForm) {
+			NegationForm item = (NegationForm) selection;
+			if (item.getOp() == null) {
+				return true;
+			}
+		} else if (selection instanceof Globally) {
+			Globally item = (Globally) selection;
+			if (item.getOp() == null) {
+				return true;
+			}
+		} else if (selection instanceof Future) {
+			Future item = (Future) selection;
+			if (item.getOp() == null) {
+				return true;
+			}
+		} else if (selection instanceof NextForm) {
+			NextForm item = (NextForm) selection;
+			if (item.getOp() == null) {
+				return true;
+			}
+		}
+		//TODO gyoker!!
+		return false;
 	}
 
 }
