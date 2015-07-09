@@ -9,6 +9,7 @@ import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import hu.bme.mit.CaTLEditor.CaTLExpression;
 import hu.bme.mit.CaTLEditor.LeftOp;
 import hu.bme.mit.CaTLEditor.Pattern;
+import hu.bme.mit.CaTLEditor.PatternStore;
 import hu.bme.mit.CaTLEditor.RightOp;
 
 public class PatternSave implements IExternalJavaAction {
@@ -28,7 +29,7 @@ public class PatternSave implements IExternalJavaAction {
 			pattern = (Pattern) selection;
 		}
 		CaTLExpression root = getRootExp(pattern);
-		root.getStore().add(PatternHelper.copyPattern(pattern));
+		root.getPatternstore().getStore().add(PatternHelper.copyPattern(pattern));
 	}
 
 	@Override
@@ -39,9 +40,9 @@ public class PatternSave implements IExternalJavaAction {
 			final EObject selection = selections.iterator().next();
 			if (selection instanceof Pattern || selection instanceof LeftOp || selection instanceof RightOp) {
 				EObject container = selection.eContainer();
-				if (container instanceof CaTLExpression) {
-					CaTLExpression root = (CaTLExpression) container;
-					if (root.getStore().contains(selection)) {
+				if (container instanceof PatternStore) {
+					PatternStore store = (PatternStore) container;
+					if (store.getStore().contains(selection)) {
 						return false;
 					}
 				}

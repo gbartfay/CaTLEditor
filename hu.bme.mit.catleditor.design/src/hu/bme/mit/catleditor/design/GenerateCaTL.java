@@ -32,7 +32,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 	
 	private void generateExpression(CaTLExpressionImpl root) {
 		StringBuilder out = new StringBuilder();
-		Pattern pattern = root.getOp();
+		Pattern pattern = root.getRootexpression().getOp();
 		handleInnerElements(out, pattern);
 
 		root.setOutput(out.toString());

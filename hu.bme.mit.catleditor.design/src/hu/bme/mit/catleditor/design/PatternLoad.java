@@ -15,6 +15,7 @@ import hu.bme.mit.CaTLEditor.NextForm;
 import hu.bme.mit.CaTLEditor.OrForm;
 import hu.bme.mit.CaTLEditor.Pattern;
 import hu.bme.mit.CaTLEditor.RightOp;
+import hu.bme.mit.CaTLEditor.RootExpression;
 
 public class PatternLoad implements IExternalJavaAction {
 
@@ -23,12 +24,8 @@ public class PatternLoad implements IExternalJavaAction {
 
 	@Override
 	public void execute(Collection<? extends EObject> selections, Map<String, Object> parameters) {
-		// TODO lehessen mashova is rakni? Jo lenne! megoldhato? valami olyasmi
-		// kene ahol a helyere hivjak meg, aztán kivalasztjak a beillesztendo
-		// mintat
-		//selections: a container ahova erkezik
-		//parameters: element
-		// itt mar biztos, hogy ures, csak masolni kell
+		//selections: the destination
+		//parameters: element - the pattern to load
 		final EObject selection = selections.iterator().next();
 		Pattern source = (Pattern) parameters.get("element");
 		Pattern element = PatternHelper.copyPattern(source);
@@ -56,8 +53,10 @@ public class PatternLoad implements IExternalJavaAction {
 		} else if (selection instanceof NextForm) {
 			NextForm item = (NextForm) selection;
 			item.setOp(element);
+		} else if (selection instanceof RootExpression) {
+			RootExpression item = (RootExpression) selection;
+			item.setOp(element);
 		}
-		//TODO gyoker!!
 	}
 
 	@Override
@@ -97,8 +96,12 @@ public class PatternLoad implements IExternalJavaAction {
 			if (item.getOp() == null) {
 				return true;
 			}
+		} else if (selection instanceof RootExpression) {
+			RootExpression item = (RootExpression) selection;
+			if (item.getOp() == null) {
+				return true;
+			}
 		}
-		//TODO gyoker!!
 		return false;
 	}
 
