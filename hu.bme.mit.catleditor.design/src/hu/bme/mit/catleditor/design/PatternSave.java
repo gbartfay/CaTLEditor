@@ -11,6 +11,7 @@ import hu.bme.mit.CaTLEditor.LeftOp;
 import hu.bme.mit.CaTLEditor.Pattern;
 import hu.bme.mit.CaTLEditor.PatternStore;
 import hu.bme.mit.CaTLEditor.RightOp;
+import hu.bme.mit.CaTLEditor.RootExpression;
 
 public class PatternSave implements IExternalJavaAction {
 
@@ -25,6 +26,8 @@ public class PatternSave implements IExternalJavaAction {
 			pattern = ((LeftOp) selection).getOp();
 		} else if (selection instanceof RightOp) {
 			pattern = ((RightOp) selection).getOp();
+		} else if (selection instanceof RootExpression) {
+			pattern = ((RootExpression) selection).getOp();
 		} else {
 			pattern = (Pattern) selection;
 		}
@@ -38,7 +41,7 @@ public class PatternSave implements IExternalJavaAction {
 			return false;
 		} else {
 			final EObject selection = selections.iterator().next();
-			if (selection instanceof Pattern || selection instanceof LeftOp || selection instanceof RightOp) {
+			if (selection instanceof Pattern || selection instanceof LeftOp || selection instanceof RightOp || selection instanceof RootExpression) {
 				EObject container = selection.eContainer();
 				if (container instanceof PatternStore) {
 					PatternStore store = (PatternStore) container;
