@@ -106,11 +106,11 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//ImpForm/rightOp"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//CaTLExpression">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/op"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/context"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/sysProp"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//CaTLExpression/output"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/store"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/rootexpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/patternstore"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//LeftOp">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//LeftOp/name"/>
@@ -119,6 +119,12 @@
     <genClasses ecoreClass="CaTLEditor.ecore#//RightOp">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//RightOp/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//RightOp/op"/>
+    </genClasses>
+    <genClasses ecoreClass="CaTLEditor.ecore#//PatternStore">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//PatternStore/store"/>
+    </genClasses>
+    <genClasses ecoreClass="CaTLEditor.ecore#//RootExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//RootExpression/op"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

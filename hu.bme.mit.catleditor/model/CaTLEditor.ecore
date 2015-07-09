@@ -125,15 +125,15 @@
         eType="#//RightOp" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaTLExpression">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//Contexts"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sysProp" lowerBound="1"
         eType="#//SystemProperties" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="output" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="store" upperBound="-1"
-        eType="#//Pattern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rootexpression" lowerBound="1"
+        eType="#//RootExpression" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="patternstore" eType="#//PatternStore"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LeftOp">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -142,6 +142,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RightOp">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternStore">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="store" upperBound="-1"
+        eType="#//Pattern" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RootExpression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
         containment="true"/>
   </eClassifiers>
