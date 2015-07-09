@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor">
-  <op xsi:type="hu.bme.mit.catleditor:UntilForm" name="UntilOut">
-    <rightOp>
-      <op xsi:type="hu.bme.mit.catleditor:ImpForm">
-        <leftOp>
-          <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp" prop="//@sysProp/@props.0"/>
-        </leftOp>
-        <rightOp>
-          <op xsi:type="hu.bme.mit.catleditor:UntilForm">
-            <rightOp>
-              <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
-            </rightOp>
-            <leftOp>
-              <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
-            </leftOp>
-          </op>
-        </rightOp>
-      </op>
-    </rightOp>
-    <leftOp>
-      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="leftProp" prop="//@sysProp/@props.0"/>
-    </leftOp>
-  </op>
+	<rootexpression>  
+	  <op xsi:type="hu.bme.mit.catleditor:UntilForm" name="UntilOut">
+	    <rightOp>
+	      <op xsi:type="hu.bme.mit.catleditor:ImpForm">
+	        <leftOp>
+	          <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp" prop="//@sysProp/@props.0"/>
+	        </leftOp>
+	        <rightOp>
+	          <op xsi:type="hu.bme.mit.catleditor:UntilForm">
+	            <rightOp>
+	              <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
+	            </rightOp>
+	            <leftOp>
+	              <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
+	            </leftOp>
+	          </op>
+	        </rightOp>
+	      </op>
+	    </rightOp>
+	    <leftOp>
+	      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="leftProp" prop="//@sysProp/@props.0"/>
+	    </leftOp>
+	  </op>
+  </rootexpression>  
   <sysProp>
     <props label="connected"/>
   </sysProp>
-  <store xsi:type="hu.bme.mit.catleditor:Globally" name="store1">
-    <op xsi:type="hu.bme.mit.catleditor:Propositions" prop="//@sysProp/@props.0"/>
-  </store>
-  <store xsi:type="hu.bme.mit.catleditor:ImpForm" name="imp clone">
-    <leftOp>
-      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp" prop="//@sysProp/@props.0"/>
-    </leftOp>
-    <rightOp>
-      <op xsi:type="hu.bme.mit.catleditor:UntilForm">
-        <rightOp>
-          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
-        </rightOp>
-        <leftOp>
-          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
-        </leftOp>
-      </op>
-    </rightOp>
-  </store>
-  <store xsi:type="hu.bme.mit.catleditor:UntilForm" name="until clone">
-    <rightOp>
-      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
-    </rightOp>
-    <leftOp>
-      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
-    </leftOp>
-  </store>
+  <patternstore>
+	  <store xsi:type="hu.bme.mit.catleditor:Globally" name="store1">
+	    <op xsi:type="hu.bme.mit.catleditor:Propositions" prop="//@sysProp/@props.0"/>
+	  </store>
+	  <store xsi:type="hu.bme.mit.catleditor:ImpForm" name="imp clone">
+	    <leftOp>
+	      <op xsi:type="hu.bme.mit.catleditor:Propositions" name="insideProp" prop="//@sysProp/@props.0"/>
+	    </leftOp>
+	    <rightOp>
+	      <op xsi:type="hu.bme.mit.catleditor:UntilForm">
+	        <rightOp>
+	          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
+	        </rightOp>
+	        <leftOp>
+	          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
+	        </leftOp>
+	      </op>
+	    </rightOp>
+	  </store>
+	  <store xsi:type="hu.bme.mit.catleditor:UntilForm" name="until clone">
+	    <rightOp>
+	      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t2"/>
+	    </rightOp>
+	    <leftOp>
+	      <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t1"/>
+	    </leftOp>
+	  </store>
+	  <store xsi:type="hu.bme.mit.catleditor:Future" name="store5"/>
+	</patternstore>  
 </hu.bme.mit.catleditor:CaTLExpression>
