@@ -84,6 +84,7 @@
     <genClasses ecoreClass="CaTLEditor.ecore#//Connection">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Connection/leftNode"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//Connection/rightNode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Connection/name"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//StaticContextVar">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//StaticContextVar/name"/>
