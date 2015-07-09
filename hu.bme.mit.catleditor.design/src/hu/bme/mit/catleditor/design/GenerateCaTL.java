@@ -142,9 +142,35 @@ public class GenerateCaTL implements IExternalJavaAction {
 		}
 		if (aaf instanceof ContextConst) {
 			ContextConst cntx = (ContextConst) aaf;
+			String contName = cntx.getCont().getCntxName();
+			switch (cntx.getOperator()) {
+			case NOTHING:
+				out = out.append(contName);
+				break;
+			case NODE_ADD:
+				out = out.append(contName);
+				out = out.append(" + ");
+				out = out.append(cntx.getUsedNode().getName());
+				break;
+			case NODE_EXC:
+				out = out.append(contName);
+				out = out.append(" - ");
+				out = out.append(cntx.getUsedNode().getName());
+				break;
+			case CONNECTION_ADD:
+				out = out.append(contName);
+				out = out.append(" + + ");
+				out = out.append(cntx.getUsedConnection().getName());
+				break;
+			case CONNECTION_EXC:
+				out = out.append(contName);
+				out = out.append(" - - ");
+				out = out.append(cntx.getUsedConnection().getName());
+				break;
+			}
+			out = out.append(" ");
 			out = out.append(Character.toChars(8669));
-			//TODO
-			out = out.append("TODO: contextconst is not implemented yet!");
+			out = out.append(" e");
 		}
 		if (aaf instanceof PropertyConst) {
 			PropertyConst propconst = (PropertyConst) aaf;
