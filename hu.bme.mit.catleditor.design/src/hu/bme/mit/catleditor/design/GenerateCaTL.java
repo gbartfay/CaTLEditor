@@ -174,11 +174,11 @@ public class GenerateCaTL implements IExternalJavaAction {
 		}
 		if (aaf instanceof PropertyConst) {
 			PropertyConst propconst = (PropertyConst) aaf;
-			out = out.append(((Context) propconst.eContainer().eContainer()).getCntxName());
+			out = out.append(((Context) propconst.getUsedProp().eContainer().eContainer()).getCntxName());
 			out = out.append(".");
-			out = out.append(((Node) propconst.eContainer()).getName());
+			out = out.append(((Node) propconst.getUsedProp().eContainer()).getName());
 			out = out.append(".");
-			out = out.append(propconst.getName());
+			out = out.append(propconst.getUsedProp().getName());
 			switch (propconst.getRelation()) {
 				case EQUAL:
 					out = out.append(" = ");

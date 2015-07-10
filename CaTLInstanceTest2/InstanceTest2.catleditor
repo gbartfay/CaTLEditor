@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X((started ˄ t &lt; t0 + 5) ˅ connected)">
-  <rootexpression>
- 	<op xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
-   	 <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
-      	<op xsi:type="hu.bme.mit.catleditor:AndForm" name="And">
-       	 <op xsi:type="hu.bme.mit.catleditor:Propositions" name="start" prop="//@sysProp/@props.2"/>
-       	 <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
-     	 </op>
-     	 <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
-     	 <op xsi:type="hu.bme.mit.catleditor:PropertyConst" name="" usedProp="//@context/@cntxs.0/@nodes.4/@properties.0" value="5"/>
-    	</op>
-  	</op>
-  </rootexpression>
   <context>
     <cntxs cntxName="e2">
       <nodes name="node1">
@@ -24,15 +12,27 @@
         <properties name="speed"/>
       </nodes>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
-      <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2" name="conn1"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.2" rightNode="//@context/@cntxs.0/@nodes.4"/>
     </cntxs>
-    <cntxs/>
+    <cntxs cntxName="e1"/>
   </context>
   <sysProp>
     <props label="connected"/>
     <props label="stopped"/>
     <props label="started"/>
   </sysProp>
+  <rootexpression>
+    <op xsi:type="hu.bme.mit.catleditor:NextForm" name="Next">
+      <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
+        <op xsi:type="hu.bme.mit.catleditor:AndForm" name="And">
+          <op xsi:type="hu.bme.mit.catleditor:Propositions" name="start" prop="//@sysProp/@props.2"/>
+          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
+        </op>
+        <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
+        <op xsi:type="hu.bme.mit.catleditor:PropertyConst" name="" usedProp="//@context/@cntxs.0/@nodes.4/@properties.0" value="5"/>
+      </op>
+    </op>
+  </rootexpression>
 </hu.bme.mit.catleditor:CaTLExpression>

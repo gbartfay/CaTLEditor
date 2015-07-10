@@ -41,7 +41,7 @@
             </style>
           </subNodeMappings>
           <subNodeMappings name="propertyconst" label="PropertyConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="PropertyConst">
-            <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="[getPropertyConstLabel(self)/]" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -424,5 +424,6 @@
         </toolSections>
       </additionalLayers>
     </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="hu.bme.mit.catleditor.design.CaTLServices"/>
   </ownedViewpoints>
 </description:Group>
