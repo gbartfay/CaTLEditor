@@ -32,6 +32,7 @@
         </op>
         <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
         <op xsi:type="hu.bme.mit.catleditor:PropertyConst" name="" usedProp="//@context/@cntxs.0/@nodes.4/@properties.0" value="5"/>
+        <op xsi:type="hu.bme.mit.catleditor:ContextConst" name="" operator="NODE_EXC" cont="//@context/@cntxs.0" usedNode="//@context/@cntxs.0/@nodes.0"/>
       </op>
     </op>
   </rootexpression>

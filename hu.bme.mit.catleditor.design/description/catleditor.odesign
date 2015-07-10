@@ -27,17 +27,17 @@
             </conditionnalStyles>
           </subNodeMappings>
           <subNodeMappings name="timing" label="TimingConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="TimingConst">
-            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="feature:StaticTimingVariable" tooltipExpression="Test tooltip" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="8" verticalDiameterComputationExpression="8">
+            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[getTimingConstLabel(self)/]" tooltipExpression="Test tooltip" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="8" verticalDiameterComputationExpression="8">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subNodeMappings>
           <subNodeMappings name="contextconst" label="ContextConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="ContextConst">
-            <style xsi:type="style:BundledImageDescription" showIcon="false" labelPosition="node" resizeKind="NSEW" shape="triangle">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="[getContextConstLabel(self)/]" labelPosition="node" resizeKind="NSEW" shape="triangle">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
             </style>
           </subNodeMappings>
           <subNodeMappings name="propertyconst" label="PropertyConst" semanticCandidatesExpression="[op/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="PropertyConst">
