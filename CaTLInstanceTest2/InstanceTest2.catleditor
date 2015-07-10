@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X((started ˄ t &lt; t0 + 5) ˅ connected)">
+<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="X((started ˄ t &lt; t0 + 5) ˅ connected ˅ e2.Node 5.speed &lt; 5 ˅ e2 - node1 ⇝ e)">
   <context>
     <cntxs cntxName="e2">
       <nodes name="node1">
