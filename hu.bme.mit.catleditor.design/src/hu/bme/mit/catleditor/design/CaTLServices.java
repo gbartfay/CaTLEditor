@@ -5,6 +5,7 @@ import org.eclipse.emf.ecore.EObject;
 import hu.bme.mit.CaTLEditor.Context;
 import hu.bme.mit.CaTLEditor.Node;
 import hu.bme.mit.CaTLEditor.PropertyConst;
+import hu.bme.mit.CaTLEditor.Propositions;
 
 public class CaTLServices {
 
@@ -28,6 +29,13 @@ public class CaTLServices {
 				break;
 		}
 		out = out.append(propconst.getValue());
+		return out.toString();
+	}
+	
+	public String getPropositionsLabel(EObject object) {
+		Propositions prop = (Propositions) object;
+		StringBuilder out = new StringBuilder();
+		out = out.append(prop.getProp().getLabel());
 		return out.toString();
 	}
 }
