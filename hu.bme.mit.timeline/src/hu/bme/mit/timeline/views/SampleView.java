@@ -4,6 +4,8 @@ package hu.bme.mit.timeline.views;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.*;
 import org.eclipse.jface.viewers.*;
+import org.eclipse.sirius.diagram.DDiagramElement;
+import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNode3EditPart;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.jface.action.*;
 import org.eclipse.jface.dialogs.MessageDialog;
@@ -31,6 +33,19 @@ import org.eclipse.swt.SWT;
  */
 
 public class SampleView extends ViewPart {
+	
+	////TEST///////////
+	//minta: com.mountainminds.eclipse.selectionsample project: selection view
+	// vizsgalni kell, hogy csak a siriusos cuccokra fusson le
+	// 
+	//+ import sirius/ DDiagramElement, sirius / DNode3EditPart 
+	//+ dependency: sirius, sirius.diagram.ui
+	//System.out.println(items[0].getClass());
+	//DNode3EditPart test = (DNode3EditPart) items[0];
+	//DDiagramElement resolveDiagramElement = test.resolveDiagramElement();
+	//System.out.println(resolveDiagramElement.getTarget().getClass());
+	////TEST END/////////////
+	
 
 	/**
 	 * The ID of the view as specified by the extension.
