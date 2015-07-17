@@ -6,9 +6,12 @@ import org.eclipse.ui.part.*;
 import org.eclipse.jface.viewers.*;
 import org.eclipse.sirius.diagram.DDiagramElement;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNode3EditPart;
+import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNodeContainer2EditPart;
+import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNodeContainerEditPart;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.jface.action.*;
 import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.text.Document;
 import org.eclipse.ui.*;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.SWT;
@@ -40,10 +43,26 @@ public class SampleView extends ViewPart {
 	// 
 	//+ import sirius/ DDiagramElement, sirius / DNode3EditPart 
 	//+ dependency: sirius, sirius.diagram.ui
-	//System.out.println(items[0].getClass());
-	//DNode3EditPart test = (DNode3EditPart) items[0];
-	//DDiagramElement resolveDiagramElement = test.resolveDiagramElement();
-	//System.out.println(resolveDiagramElement.getTarget().getClass());
+//	System.out.println(items[0].getClass());
+//	if (items[0] instanceof DNode3EditPart) {
+//		DNode3EditPart test = (DNode3EditPart) items[0];
+//		DDiagramElement resolveDiagramElement = test.resolveDiagramElement();
+//		System.out.println(resolveDiagramElement.getTarget().getClass());
+//		textviewer.setDocument(new Document(resolveDiagramElement.getTarget().getClass().toString()));
+//		pagebook.showPage(textviewer.getControl());
+//	} else if (items[0] instanceof DNodeContainer2EditPart) {
+//		DNodeContainer2EditPart test = (DNodeContainer2EditPart) items[0];
+//		DDiagramElement resolveDiagramElement = test.resolveDiagramElement();
+//		System.out.println(resolveDiagramElement.getTarget().getClass());
+//		textviewer.setDocument(new Document(resolveDiagramElement.getTarget().getClass().toString()));
+//		pagebook.showPage(textviewer.getControl());
+//	} else if (items[0] instanceof DNodeContainerEditPart) {
+//		DNodeContainerEditPart test = (DNodeContainerEditPart) items[0];
+//		DDiagramElement resolveDiagramElement = test.resolveDiagramElement();
+//		System.out.println(resolveDiagramElement.getTarget().getClass());
+//		textviewer.setDocument(new Document(resolveDiagramElement.getTarget().getClass().toString()));
+//		pagebook.showPage(textviewer.getControl());
+//	} else {
 	////TEST END/////////////
 	
 
