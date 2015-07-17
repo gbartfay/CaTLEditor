@@ -3,6 +3,8 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="CaTLEditor" nsURI="hu.bme.mit.catleditor" nsPrefix="hu.bme.mit.catleditor">
   <eClassifiers xsi:type="ecore:EClass" name="Pattern">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//PatternTypeEnum"
+        defaultValueLiteral="USER"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AbstractAtomicFormulas" abstract="true"
       eSuperTypes="#//Pattern">
@@ -153,5 +155,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="RootExpression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="op" lowerBound="1" eType="#//Pattern"
         containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PatternTypeEnum">
+    <eLiterals name="USER"/>
+    <eLiterals name="OCCURRENCE" value="1"/>
+    <eLiterals name="ORDER" value="2"/>
   </eClassifiers>
 </ecore:EPackage>

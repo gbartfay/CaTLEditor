@@ -23,8 +23,14 @@
       <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//ContextOperatorEnum/CONNECTION_ADD"/>
       <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//ContextOperatorEnum/NOTHING"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CaTLEditor.ecore#//PatternTypeEnum">
+      <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//PatternTypeEnum/USER"/>
+      <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//PatternTypeEnum/OCCURRENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="CaTLEditor.ecore#//PatternTypeEnum/ORDER"/>
+    </genEnums>
     <genClasses ecoreClass="CaTLEditor.ecore#//Pattern">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/type"/>
     </genClasses>
     <genClasses image="false" ecoreClass="CaTLEditor.ecore#//AbstractAtomicFormulas">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//AbstractAtomicFormulas/temperature"/>
