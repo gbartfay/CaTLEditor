@@ -3,6 +3,9 @@ package hu.bme.mit.timeline.views;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.*;
+
+import com.mountainminds.eclipse.selectionsample.SelectionView;
+
 import org.eclipse.jface.viewers.*;
 import org.eclipse.sirius.diagram.DDiagramElement;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNode3EditPart;
@@ -12,6 +15,7 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.jface.action.*;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.text.Document;
+import org.eclipse.jface.text.TextViewer;
 import org.eclipse.ui.*;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.SWT;
@@ -75,6 +79,20 @@ public class SampleView extends ViewPart {
 	private Action action1;
 	private Action action2;
 	private Action doubleClickAction;
+	
+	private PageBook pagebook;
+	private TableViewer tableviewer;
+	private TextViewer textviewer;
+	
+	// the listener we register with the selection service 
+	private ISelectionListener listener = new ISelectionListener() {
+		public void selectionChanged(IWorkbenchPart sourcepart, ISelection selection) {
+			// we ignore our own selections
+			if (sourcepart != SampleView.this) {
+			    showSelection(sourcepart, selection);
+			}
+		}
+	};
 
 	/*
 	 * The content provider class is responsible for
