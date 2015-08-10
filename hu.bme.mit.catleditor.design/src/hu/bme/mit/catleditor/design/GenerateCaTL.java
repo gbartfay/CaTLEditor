@@ -1,5 +1,14 @@
 package hu.bme.mit.catleditor.design;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.util.Collection;
 import java.util.Map;
 
@@ -21,8 +30,6 @@ public class GenerateCaTL implements IExternalJavaAction {
 			Map<String, Object> parameters) {
 		CaTLExpressionImpl catlexpr = getSemanticTarget(selections);
         generateExpression(catlexpr);
-
-		
 	}
 
 	@Override
@@ -36,6 +43,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 		handleInnerElements(out, pattern);
 
 		root.setOutput(out.toString());
+		generateFile(out, root);
 	}
 	
 	private void handleInnerElements(StringBuilder out, Pattern pattern) {
@@ -212,6 +220,18 @@ public class GenerateCaTL implements IExternalJavaAction {
             CaTLExpressionImpl root = (CaTLExpressionImpl) semanticTarget;
             return root;
         }
+    }
+    
+    private void generateFile(StringBuilder out, CaTLExpressionImpl root) {
+    	
+    	String path = System.getProperty("user.home");
+    	
+		try (Writer writer = new BufferedWriter(
+				new OutputStreamWriter(new FileOutputStream(path + File.separator + root.getOutputFileName() + ".txt"), "utf-8"))) {
+			writer.write(out.toString());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
 
 }
