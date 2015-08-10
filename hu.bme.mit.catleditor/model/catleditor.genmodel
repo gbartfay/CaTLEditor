@@ -118,6 +118,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//CaTLExpression/output"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/rootexpression"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CaTLEditor.ecore#//CaTLExpression/patternstore"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//CaTLExpression/outputFileName"/>
     </genClasses>
     <genClasses ecoreClass="CaTLEditor.ecore#//LeftOp">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//LeftOp/name"/>

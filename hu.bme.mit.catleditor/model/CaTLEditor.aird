@@ -355,6 +355,10 @@
                 <styles xmi:type="notation:FontStyle" xmi:id="_EJW2hyCzEeWGe5iAPhbdag"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_iYe_AR_YEeWWhsEo2nJ7hA"/>
               </children>
+              <children xmi:type="notation:Node" xmi:id="_2oxtMD85EeWcAotaF1i6NQ" type="3010" element="_2beRAD85EeWcAotaF1i6NQ">
+                <styles xmi:type="notation:FontStyle" xmi:id="_2oxtMT85EeWcAotaF1i6NQ" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_2oxtMj85EeWcAotaF1i6NQ"/>
+              </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_D6sywhmJEeWqSr4O7cJ4KQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_D6sywxmJEeWqSr4O7cJ4KQ"/>
             </children>
@@ -2171,7 +2175,7 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_TmOrUCYdEeWyZds0337gYQ" backgroundStyle="Liquid" foregroundColor="255,252,216">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6wty8D85EeWcAotaF1i6NQ" backgroundStyle="Liquid" foregroundColor="255,252,216">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
@@ -2179,6 +2183,14 @@
           <target xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//CaTLExpression/output"/>
           <semanticElements xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//CaTLExpression/output"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_lW3bsB_YEeWWhsEo2nJ7hA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_2beRAD85EeWcAotaF1i6NQ" name="outputFileName : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//CaTLExpression/outputFileName"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="CaTLEditor.ecore#//CaTLExpression/outputFileName"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_6xLF8D85EeWcAotaF1i6NQ" labelAlignment="LEFT">
             <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
