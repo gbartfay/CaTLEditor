@@ -31,6 +31,8 @@
     <genClasses ecoreClass="CaTLEditor.ecore#//Pattern">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//Pattern/generalCaTL"/>
     </genClasses>
     <genClasses image="false" ecoreClass="CaTLEditor.ecore#//AbstractAtomicFormulas">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CaTLEditor.ecore#//AbstractAtomicFormulas/temperature"/>
