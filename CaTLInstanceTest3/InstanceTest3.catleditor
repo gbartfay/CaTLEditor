@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="(connected U (connected → (t &lt; t1 U t &lt; t2)))">
+<hu.bme.mit.catleditor:CaTLExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.catleditor="hu.bme.mit.catleditor" output="(connectedeshgjsenjgnseubgusebgbseubguseboig U (connectedeshgjsenjgnseubgusebgbseubguseboig → (t &lt; t1 U t &lt; t2)))">
   <sysProp>
     <props label="connected"/>
   </sysProp>

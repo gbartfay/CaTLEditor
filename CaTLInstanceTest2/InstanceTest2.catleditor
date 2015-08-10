@@ -13,7 +13,7 @@
       </nodes>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.0"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.1" rightNode="//@context/@cntxs.0/@nodes.2" name="conn1"/>
-      <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2"/>
+      <connections leftNode="//@context/@cntxs.0/@nodes.0" rightNode="//@context/@cntxs.0/@nodes.2" name="connection2"/>
       <connections leftNode="//@context/@cntxs.0/@nodes.2" rightNode="//@context/@cntxs.0/@nodes.4"/>
     </cntxs>
     <cntxs cntxName="e1"/>
