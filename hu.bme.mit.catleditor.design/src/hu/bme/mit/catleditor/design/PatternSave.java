@@ -32,7 +32,10 @@ public class PatternSave implements IExternalJavaAction {
 			pattern = (Pattern) selection;
 		}
 		CaTLExpression root = getRootExp(pattern);
-		root.getPatternstore().getStore().add(PatternHelper.copyPattern(pattern));
+		Pattern copyOfPattern = PatternHelper.copyPattern(pattern);
+		String generatedCaTL = PatternHelper.generateCaTLForPattern(pattern);
+		copyOfPattern.setGeneralCaTL(generatedCaTL);
+		root.getPatternstore().getStore().add(copyOfPattern);
 	}
 
 	@Override

@@ -155,4 +155,10 @@ public class PatternHelper {
 
 		return target;
 	}
+	
+	public static String generateCaTLForPattern(Pattern pattern) {
+		GenerateCaTL catlGenerator = new GenerateCaTL();
+		//TODO catl preparálása
+		return catlGenerator.generateFromPattern(pattern);
+	}
 }

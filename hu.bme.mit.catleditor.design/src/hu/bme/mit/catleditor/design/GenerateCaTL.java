@@ -234,5 +234,11 @@ public class GenerateCaTL implements IExternalJavaAction {
 			e.printStackTrace();
 		}
     }
+    
+    public String generateFromPattern(Pattern pattern) {
+    	StringBuilder out = new StringBuilder();
+		handleInnerElements(out, pattern);
+    	return out.toString();
+    }
 
 }
