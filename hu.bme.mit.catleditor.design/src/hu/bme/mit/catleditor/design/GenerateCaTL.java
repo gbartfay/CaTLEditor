@@ -229,6 +229,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 		try (Writer writer = new BufferedWriter(
 				new OutputStreamWriter(new FileOutputStream(path + File.separator + root.getOutputFileName() + ".txt"), "utf-8"))) {
 			writer.write(out.toString());
+			System.out.println("Output generated to file: " + path + File.separator + root.getOutputFileName() + ".txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
