@@ -2,12 +2,9 @@ package hu.bme.mit.catleditor.design;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.Collection;
 import java.util.HashMap;
@@ -17,7 +14,24 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 
-import hu.bme.mit.CaTLEditor.*;
+import hu.bme.mit.CaTLEditor.AbstractAtomicFormulas;
+import hu.bme.mit.CaTLEditor.AndForm;
+import hu.bme.mit.CaTLEditor.Context;
+import hu.bme.mit.CaTLEditor.ContextConst;
+import hu.bme.mit.CaTLEditor.Future;
+import hu.bme.mit.CaTLEditor.Globally;
+import hu.bme.mit.CaTLEditor.ImpForm;
+import hu.bme.mit.CaTLEditor.NegationForm;
+import hu.bme.mit.CaTLEditor.NextForm;
+import hu.bme.mit.CaTLEditor.Node;
+import hu.bme.mit.CaTLEditor.OrForm;
+import hu.bme.mit.CaTLEditor.Pattern;
+import hu.bme.mit.CaTLEditor.PropertyConst;
+import hu.bme.mit.CaTLEditor.Propositions;
+import hu.bme.mit.CaTLEditor.SystemProperty;
+import hu.bme.mit.CaTLEditor.TemperatureEnum;
+import hu.bme.mit.CaTLEditor.TimingConst;
+import hu.bme.mit.CaTLEditor.UntilForm;
 import hu.bme.mit.CaTLEditor.impl.CaTLExpressionImpl;
 
 public class GenerateCaTL implements IExternalJavaAction {

@@ -7,8 +7,8 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 
-import hu.bme.mit.CaTLEditor.impl.CaTLExpressionImpl;
-import hu.bme.mit.CaTLEditor.*;
+import hu.bme.mit.CaTLEditor.CaTLEditorFactory;
+import hu.bme.mit.CaTLEditor.NextForm;
 
 public class TestPattern implements IExternalJavaAction {
 
