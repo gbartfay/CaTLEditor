@@ -158,7 +158,7 @@ public class PatternHelper {
 	
 	public static String generateCaTLForPattern(Pattern pattern) {
 		GenerateCaTL catlGenerator = new GenerateCaTL();
-		//TODO catl preparálása
+		//TODO catl preparálása: le kell cserélni a fv hívást
 		return catlGenerator.generateFromPattern(pattern);
 	}
 }

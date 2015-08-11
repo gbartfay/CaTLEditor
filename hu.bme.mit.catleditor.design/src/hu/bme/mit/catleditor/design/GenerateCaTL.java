@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.emf.ecore.EObject;
@@ -20,9 +21,11 @@ import hu.bme.mit.CaTLEditor.*;
 import hu.bme.mit.CaTLEditor.impl.CaTLExpressionImpl;
 
 public class GenerateCaTL implements IExternalJavaAction {
+	
+	private Map<Object, Integer> dictionary = null;
 
 	public GenerateCaTL() {
-		
+		dictionary = new HashMap<Object, Integer>();
 	}
 
 	@Override
@@ -40,18 +43,18 @@ public class GenerateCaTL implements IExternalJavaAction {
 	private void generateExpression(CaTLExpressionImpl root) {
 		StringBuilder out = new StringBuilder();
 		Pattern pattern = root.getRootexpression().getOp();
-		handleInnerElements(out, pattern);
+		handleInnerElements(out, pattern, false);
 
 		root.setOutput(out.toString());
 		generateFile(out, root);
 	}
 	
-	private void handleInnerElements(StringBuilder out, Pattern pattern) {
+	private void handleInnerElements(StringBuilder out, Pattern pattern, boolean reduced) {
 		if (pattern instanceof OrForm) {
 			OrForm or = (OrForm) pattern;
 			out = out.append("(");
 			for (Pattern subExp : or.getOp()) {
-				handleInnerElements(out, (subExp));
+				handleInnerElements(out, subExp, reduced);
 				out = out.append(" ");
 				out = out.append(Character.toChars(709));
 				out = out.append(" ");
@@ -64,7 +67,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 			AndForm and = (AndForm) pattern;
 			out = out.append("(");
 			for (Pattern subExp : and.getOp()) {
-				handleInnerElements(out, (subExp));
+				handleInnerElements(out, subExp, reduced);
 				out = out.append(" ");
 				out = out.append(Character.toChars(708));
 				out = out.append(" ");
@@ -76,11 +79,11 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (pattern instanceof ImpForm) {
 			ImpForm imp = (ImpForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (imp.getLeftOp().getOp()));
+			handleInnerElements(out, (imp.getLeftOp().getOp()), reduced);
 			out = out.append(" ");
 			out = out.append(Character.toChars(8594));
 			out = out.append(" ");
-			handleInnerElements(out, (imp.getRightOp().getOp()));
+			handleInnerElements(out, (imp.getRightOp().getOp()), reduced);
 			out = out.append(")");
 		}
 		
@@ -88,40 +91,40 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (pattern instanceof NegationForm) {
 			NegationForm neg = (NegationForm) pattern;
 			out.append(Character.toChars(172));
-			handleInnerElements(out, (neg.getOp()));
+			handleInnerElements(out, (neg.getOp()), reduced);
 		}
 		
 		if (pattern instanceof NextForm) {
 			NextForm next = (NextForm) pattern;
 			out = out.append("X");
-			handleInnerElements(out, (next.getOp()));
+			handleInnerElements(out, (next.getOp()), reduced);
 		}
 		if (pattern instanceof Globally) {
 			Globally globally = (Globally) pattern;
 			out = out.append("G");
-			handleInnerElements(out, (globally.getOp()));
+			handleInnerElements(out, (globally.getOp()), reduced);
 		}
 		if (pattern instanceof Future) {
 			Future future = (Future) pattern;
 			out = out.append("F");
-			handleInnerElements(out, (future.getOp()));
+			handleInnerElements(out, (future.getOp()), reduced);
 		}
 		if (pattern instanceof UntilForm) {
 			UntilForm until = (UntilForm) pattern;
 			out = out.append("(");
-			handleInnerElements(out, (until.getLeftOp().getOp()));
+			handleInnerElements(out, (until.getLeftOp().getOp()), reduced);
 			out = out.append(" U ");
-			handleInnerElements(out, (until.getRightOp().getOp()));
+			handleInnerElements(out, (until.getRightOp().getOp()), reduced);
 			out = out.append(")");
 		}
 		
 		if (pattern instanceof AbstractAtomicFormulas) {
 			AbstractAtomicFormulas aaf = (AbstractAtomicFormulas) pattern;
-			handleAbstractElements(out, aaf);
+			handleAbstractElements(out, aaf, reduced);
 		} 
 	}
 	
-	private void handleAbstractElements(StringBuilder out, AbstractAtomicFormulas aaf) {
+	private void handleAbstractElements(StringBuilder out, AbstractAtomicFormulas aaf, boolean reduced) {
 		//temperature
 		boolean isCold = aaf.getTemperature().equals(TemperatureEnum.COLD);
 		if (isCold) {
@@ -130,7 +133,12 @@ public class GenerateCaTL implements IExternalJavaAction {
 		
 		if (aaf instanceof Propositions) {
 			Propositions prop = (Propositions) aaf;
-			out = out.append(prop.getProp().getLabel());
+			if (reduced) {
+				out = out.append("prop");
+			} else {
+				out = out.append(prop.getProp().getLabel());
+			}
+			
 		}
 		if (aaf instanceof TimingConst) {
 			TimingConst timing = (TimingConst) aaf;
@@ -237,8 +245,26 @@ public class GenerateCaTL implements IExternalJavaAction {
     
     public String generateFromPattern(Pattern pattern) {
     	StringBuilder out = new StringBuilder();
-		handleInnerElements(out, pattern);
+		handleInnerElements(out, pattern, false);
     	return out.toString();
+    }
+    
+    public String generateReducedFromPattern(Pattern pattern) {
+    	StringBuilder out = new StringBuilder();
+		handleInnerElements(out, pattern, true);
+    	return out.toString();
+    }
+    
+    private Integer getReducedId(AbstractAtomicFormulas aaf) {
+    	if (dictionary.containsKey(aaf)) {
+    		return dictionary.get(aaf);
+    	} else {
+    		Integer id = dictionary.size() + 1;
+    		dictionary.put(aaf, id);
+    		return id;
+    	}
+    	
+    	
     }
 
 }
