@@ -36,4 +36,17 @@
       </op>
     </op>
   </rootexpression>
+  <patternstore>
+    <store xsi:type="hu.bme.mit.catleditor:NextForm" name="Next" generalCaTL="X((prop1 ˄ timing1) ˅ prop2 ˅ pconst1 ˅ cntx1)">
+      <op xsi:type="hu.bme.mit.catleditor:OrForm" name="Or">
+        <op xsi:type="hu.bme.mit.catleditor:AndForm" name="And">
+          <op xsi:type="hu.bme.mit.catleditor:Propositions" name="start" prop="//@sysProp/@props.2"/>
+          <op xsi:type="hu.bme.mit.catleditor:TimingConst" StaticTimingVariable="t0 + 5"/>
+        </op>
+        <op xsi:type="hu.bme.mit.catleditor:Propositions" name="conn" prop="//@sysProp/@props.0"/>
+        <op xsi:type="hu.bme.mit.catleditor:PropertyConst" name="" usedProp="//@context/@cntxs.0/@nodes.4/@properties.0" value="5"/>
+        <op xsi:type="hu.bme.mit.catleditor:ContextConst" name="" operator="NODE_EXC" cont="//@context/@cntxs.0" usedNode="//@context/@cntxs.0/@nodes.0"/>
+      </op>
+    </store>
+  </patternstore>
 </hu.bme.mit.catleditor:CaTLExpression>

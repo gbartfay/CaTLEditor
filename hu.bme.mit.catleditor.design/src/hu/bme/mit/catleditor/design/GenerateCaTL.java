@@ -22,10 +22,13 @@ import hu.bme.mit.CaTLEditor.impl.CaTLExpressionImpl;
 
 public class GenerateCaTL implements IExternalJavaAction {
 	
-	private Map<Object, Integer> dictionary = null;
+	private Map<Object, Integer> dictionarySysProp = null;
+	private int numberTimingConst = 0;
+	private int numberContextConst = 0;
+	private int numberPropertyConst = 0;
 
 	public GenerateCaTL() {
-		dictionary = new HashMap<Object, Integer>();
+		dictionarySysProp = new HashMap<Object, Integer>();
 	}
 
 	@Override
@@ -134,7 +137,7 @@ public class GenerateCaTL implements IExternalJavaAction {
 		if (aaf instanceof Propositions) {
 			Propositions prop = (Propositions) aaf;
 			if (reduced) {
-				out = out.append("prop");
+				out = out.append("prop" + getReducedIdForSysProp(prop.getProp()));
 			} else {
 				out = out.append(prop.getProp().getLabel());
 			}
@@ -142,71 +145,84 @@ public class GenerateCaTL implements IExternalJavaAction {
 		}
 		if (aaf instanceof TimingConst) {
 			TimingConst timing = (TimingConst) aaf;
-			out = out.append(timing.getDynamicClock());
-			switch (timing.getRelation()) {
-				case EQUAL:
-					out = out.append(" = ");
-					break;
-				case LESS:
-					out = out.append(" < ");
-					break;
-				case MORE:
-					out = out.append(" > ");
-					break;
+			if (reduced) {
+				out = out.append("timing" + (++numberTimingConst));
+			} else {
+				out = out.append(timing.getDynamicClock());
+				switch (timing.getRelation()) {
+					case EQUAL:
+						out = out.append(" = ");
+						break;
+					case LESS:
+						out = out.append(" < ");
+						break;
+					case MORE:
+						out = out.append(" > ");
+						break;
+				}
+				out = out.append(timing.getStaticTimingVariable());
 			}
-			out = out.append(timing.getStaticTimingVariable());
+			
 		}
 		if (aaf instanceof ContextConst) {
 			ContextConst cntx = (ContextConst) aaf;
-			String contName = cntx.getCont().getCntxName();
-			switch (cntx.getOperator()) {
-			case NOTHING:
-				out = out.append(contName);
-				break;
-			case NODE_ADD:
-				out = out.append(contName);
-				out = out.append(" + ");
-				out = out.append(cntx.getUsedNode().getName());
-				break;
-			case NODE_EXC:
-				out = out.append(contName);
-				out = out.append(" - ");
-				out = out.append(cntx.getUsedNode().getName());
-				break;
-			case CONNECTION_ADD:
-				out = out.append(contName);
-				out = out.append(" + + ");
-				out = out.append(cntx.getUsedConnection().getName());
-				break;
-			case CONNECTION_EXC:
-				out = out.append(contName);
-				out = out.append(" - - ");
-				out = out.append(cntx.getUsedConnection().getName());
-				break;
+			if (reduced) {
+				out = out.append("cntx" + (++numberContextConst));
+			} else {
+				String contName = cntx.getCont().getCntxName();
+				switch (cntx.getOperator()) {
+				case NOTHING:
+					out = out.append(contName);
+					break;
+				case NODE_ADD:
+					out = out.append(contName);
+					out = out.append(" + ");
+					out = out.append(cntx.getUsedNode().getName());
+					break;
+				case NODE_EXC:
+					out = out.append(contName);
+					out = out.append(" - ");
+					out = out.append(cntx.getUsedNode().getName());
+					break;
+				case CONNECTION_ADD:
+					out = out.append(contName);
+					out = out.append(" + + ");
+					out = out.append(cntx.getUsedConnection().getName());
+					break;
+				case CONNECTION_EXC:
+					out = out.append(contName);
+					out = out.append(" - - ");
+					out = out.append(cntx.getUsedConnection().getName());
+					break;
+				}
+				out = out.append(" ");
+				out = out.append(Character.toChars(8669));
+				out = out.append(" e");
 			}
-			out = out.append(" ");
-			out = out.append(Character.toChars(8669));
-			out = out.append(" e");
 		}
 		if (aaf instanceof PropertyConst) {
 			PropertyConst propconst = (PropertyConst) aaf;
-			out = out.append(((Context) propconst.getUsedProp().eContainer().eContainer()).getCntxName());
-			out = out.append(".");
-			out = out.append(((Node) propconst.getUsedProp().eContainer()).getName());
-			out = out.append(".");
-			out = out.append(propconst.getUsedProp().getName());
-			switch (propconst.getRelation()) {
-				case EQUAL:
-					out = out.append(" = ");
-					break;
-				case LESS:
-					out = out.append(" < ");
-					break;
-				case MORE:
-					out = out.append(" > ");
-					break;
+			if (reduced) {
+				out = out.append("pconst" + (++numberPropertyConst));
+			} else {
+				out = out.append(((Context) propconst.getUsedProp().eContainer().eContainer()).getCntxName());
+				out = out.append(".");
+				out = out.append(((Node) propconst.getUsedProp().eContainer()).getName());
+				out = out.append(".");
+				out = out.append(propconst.getUsedProp().getName());
+				switch (propconst.getRelation()) {
+					case EQUAL:
+						out = out.append(" = ");
+						break;
+					case LESS:
+						out = out.append(" < ");
+						break;
+					case MORE:
+						out = out.append(" > ");
+						break;
+				}
+				out = out.append(propconst.getValue());
 			}
-			out = out.append(propconst.getValue());
 		}
 		if (isCold) {
 			out = out.append(">");
@@ -255,12 +271,12 @@ public class GenerateCaTL implements IExternalJavaAction {
     	return out.toString();
     }
     
-    private Integer getReducedId(AbstractAtomicFormulas aaf) {
-    	if (dictionary.containsKey(aaf)) {
-    		return dictionary.get(aaf);
+    private Integer getReducedIdForSysProp(SystemProperty sp) {
+    	if (dictionarySysProp.containsKey(sp)) {
+    		return dictionarySysProp.get(sp);
     	} else {
-    		Integer id = dictionary.size() + 1;
-    		dictionary.put(aaf, id);
+    		Integer id = dictionarySysProp.size() + 1;
+    		dictionarySysProp.put(sp, id);
     		return id;
     	}
     	
