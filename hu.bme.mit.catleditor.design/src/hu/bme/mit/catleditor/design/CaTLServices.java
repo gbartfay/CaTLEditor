@@ -5,6 +5,7 @@ import org.eclipse.emf.ecore.EObject;
 import hu.bme.mit.CaTLEditor.Context;
 import hu.bme.mit.CaTLEditor.ContextConst;
 import hu.bme.mit.CaTLEditor.Node;
+import hu.bme.mit.CaTLEditor.Pattern;
 import hu.bme.mit.CaTLEditor.PropertyConst;
 import hu.bme.mit.CaTLEditor.Propositions;
 import hu.bme.mit.CaTLEditor.TimingConst;
@@ -93,5 +94,10 @@ public class CaTLServices {
 		out = out.append(Character.toChars(8669));
 		out = out.append(" e");
 		return out.toString();
+	}
+	
+	public String getPatternStoreItemTooltip(EObject object) {
+		Pattern item = (Pattern) object;
+		return item.getDescription() + System.lineSeparator() + "CaTL: " + item.getGeneralCaTL();
 	}
 }

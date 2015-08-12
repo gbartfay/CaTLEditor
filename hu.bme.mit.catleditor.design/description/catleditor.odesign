@@ -375,7 +375,7 @@
         <containerMappings name="patternstore" label="PatternStore" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="PatternStore" childrenPresentation="VerticalStack">
           <subContainerMappings name="occurrence" label="Occurrence" semanticCandidatesExpression="[self/]" domainClass="PatternStore">
             <subNodeMappings name="storeitemoccurrence" label="Store Item" preconditionExpression="[type.toString() = 'OCCURRENCE'/]" semanticCandidatesExpression="[store/]" domainClass="Pattern">
-              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="[description/]" labelPosition="node" resizeKind="NSEW">
+              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="service:getPatternStoreItemTooltip()" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -390,7 +390,7 @@
           </subContainerMappings>
           <subContainerMappings name="order" label="Order" semanticCandidatesExpression="[self/]" domainClass="PatternStore">
             <subNodeMappings name="storeitemorder" label="Store Item" preconditionExpression="[type.toString() = 'ORDER'/]" semanticCandidatesExpression="[store/]" domainClass="Pattern">
-              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="[description/]" labelPosition="node" resizeKind="NSEW">
+              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="service:getPatternStoreItemTooltip()" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -405,7 +405,7 @@
           </subContainerMappings>
           <subContainerMappings name="userpatterns" label="User Patterns" semanticCandidatesExpression="[self/]" domainClass="PatternStore">
             <subNodeMappings name="storeitemuser" label="Store Item" preconditionExpression="[type.toString() = 'USER'/]" semanticCandidatesExpression="[store/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="Pattern">
-              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="[description/]" labelPosition="node" resizeKind="NSEW">
+              <style xsi:type="style:SquareDescription" showIcon="false" tooltipExpression="service:getPatternStoreItemTooltip()" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
