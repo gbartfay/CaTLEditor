@@ -309,11 +309,9 @@
                   <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subNodeMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" showIcon="false">
+              <style xsi:type="style:WorkspaceImageDescription" workspacePath="/hu.bme.mit.catleditor.design/images/forklift.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               </style>
             </subContainerMappings>
             <style xsi:type="style:FlatContainerStyleDescription" arcWidth="1" arcHeight="1" showIcon="false" labelExpression="feature:cntxName">
@@ -359,7 +357,7 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Context" referenceName="cntxs"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnode" label="Node" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnode" label="Node" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='cntxlayer']/@containerMappings[name='contexts']/@subContainerMappings[name='context']/@subContainerMappings[name='node']" iconPath="/hu.bme.mit.catleditor.design/images/forklift_icon.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
