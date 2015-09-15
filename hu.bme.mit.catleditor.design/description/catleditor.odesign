@@ -74,25 +74,25 @@
               <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="left side of until">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
               </style>
             </subContainerMappings>
             <subContainerMappings name="untilhelpercontainer" label="UntilHelperContainer" semanticCandidatesExpression="[self/]" domainClass="UntilForm">
-              <style xsi:type="style:FlatContainerStyleDescription" labelSize="20" showIcon="false" labelExpression="Until">
+              <style xsi:type="style:FlatContainerStyleDescription" labelSize="20" showIcon="false" labelExpression="   Until   ">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
               </style>
             </subContainerMappings>
             <subContainerMappings name="afteruntil" semanticCandidatesExpression="[rightOp/]" doubleClickDescription="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@toolSections.0/@ownedTools[name='click']" domainClass="RightOp" dropDescriptions="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='storelayer']/@toolSections.0/@ownedTools[name='patternload']" reusedNodeMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subNodeMappings[name='propositions'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subNodeMappings[name='contextconst'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subNodeMappings[name='propertyconst'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subNodeMappings[name='timing']" reusedContainerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='implication'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='and'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='future'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='globally'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='negation'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='next'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='or'] //@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='until']">
               <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="right side of until">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
               </style>
             </subContainerMappings>
             <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="Until">
@@ -209,28 +209,28 @@
           </ownedTools>
         </toolSections>
         <toolSections name="temporal" label="Temporal logic">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnext" label="Next" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='next']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createnext" label="Next" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='next']" iconPath="/hu.bme.mit.catleditor.design/images/next_icon.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="NextForm" referenceName="op"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createglobally" label="Globally" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='globally']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createglobally" label="Globally" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='globally']" iconPath="/hu.bme.mit.catleditor.design/images/globally_icon.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Globally" referenceName="op"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createfuture" label="Future" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='future']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createfuture" label="Future" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='future']" iconPath="/hu.bme.mit.catleditor.design/images/future_icon.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Future" referenceName="op"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createuntil" label="Until" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='until']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createuntil" label="Until" containerMappings="//@ownedViewpoints[name='catleditor']/@ownedRepresentations[name='CaTLDiagram']/@additionalLayers[name='catllayer']/@containerMappings[name='rootexpression']/@subContainerMappings[name='until']" iconPath="/hu.bme.mit.catleditor.design/images/until_icon.png">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
